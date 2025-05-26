@@ -17,27 +17,88 @@
     />
   </head>
   <body>
-    <!-- Hero section -->
-    <section class="section">
-      <div class="container">
-        <h1>ТОВ «Гардексперт»</h1>
-        <p>+38 (067) 329-59-39, +38 (063) 675-25-46</p>
-        <p>guardexpertt@gmail.com</p>
-        <a target="_blank" rel="noopener" href="">
-          <svg width="24" height="24">
-            <use href="img/icons.svg#icon-linkedin"></use>
-          </svg>
-        </a>
-        <a target="_blank" rel="noopener" href="">
-          <svg width="24" height="24">
-            <use href="img/icons.svg#icon-instagram"></use>
-          </svg>
-        </a>
-        <button>Консультація експерта</button>
-      </div>
-    </section>
+    <div class="header-hero">
+      <!-- Header section -->
+      <header class="header">
+        <div class="container-header">
+          <div class="header-nav">
+            <a
+              class="menu-social-item"
+              target="_self"
+              rel="noopener"
+              href="./index.html"
+            >
+              <picture>
+                <source
+                  srcset="./src/img/logo.png 1x, ./src/img/logo-2x.png 2x"
+                  media="(min-width: 320px)"
+                  type="image/png"
+                />
+                <img class="logo-header" src="./src/img/logo.png" alt="Logo" />
+              </picture>
+            </a>
+            <button
+              id="openModalBtn"
+              class="menu-button"
+              title="open menu"
+              type="button"
+            >
+              <svg class="header-menu" width="24" height="20">
+                <use href="img/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <ul class="menu-nav-header">
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#about">Про нас</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#services">Послуги</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#projects">Проєкти</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#choose-us">Чому ми?</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#team">Команда</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#partners">Партнери</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero section -->
+      <section>
+        <div class="container">
+          <div class="hero-info">
+            <h1 class="hero-title">ТОВ «Гардексперт»</h1>
+            <p>+38 (067) 329-59-39,</p>
+            <p>+38 (063) 675-25-46</p>
+            <p>guardexpertt@gmail.com</p>
+            <a target="_blank" rel="noopener" href="">
+              <svg width="24" height="24">
+                <use href="img/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+            <a target="_blank" rel="noopener" href="">
+              <svg width="24" height="24">
+                <use href="img/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </div>
+          <button class="hero-button">Консультація експерта</button>
+        </div>
+      </section>
+    </div>
     <!-- About section -->
-    <section class="section">
+    <section id="about" class="section">
       <div class="container">
         <h2 class="section-title">Про нас</h2>
         <p>
@@ -45,15 +106,22 @@
           проєктування та супровід експертизи, продаж/монтаж обладнання,
           сервісні послуги щодо:
         </p>
-        <ul>
-          <li>систем пожежної сигналізації;</li>
-          <li>систем пожежогасіння;</li>
-          <li>систем оповіщення;</li>
-          <li>систем раннього виявлення надзвичайних ситуацій;</li>
-          <li>систем вентиляції;</li>
-          <li>систем кондиціонування;</li>
-          <li>вогнезахисту конструкцій.</li>
-        </ul>
+        <div class="about-lists">
+          <ul class="about-list">
+            <li><span class="bullet"></span>систем пожежної сигналізації;</li>
+            <li><span class="bullet"></span>систем пожежогасіння;</li>
+            <li><span class="bullet"></span>систем оповіщення;</li>
+            <li>
+              <span class="bullet"></span>систем раннього виявлення надзвичайних
+              ситуацій;
+            </li>
+          </ul>
+          <ul class="about-list">
+            <li><span class="bullet"></span>систем вентиляції;</li>
+            <li><span class="bullet"></span>систем кондиціонування;</li>
+            <li><span class="bullet"></span>вогнезахисту конструкцій.</li>
+          </ul>
+        </div>
       </div>
     </section>
     <!-- Certification section -->
@@ -97,37 +165,37 @@
       </div>
     </section>
     <!-- Services section -->
-    <section class="section">
+    <section id="services" class="section">
       <div class="container">
         <h2 class="section-title">Послуги</h2>
       </div>
     </section>
     <!-- Projects section -->
-    <section class="section">
+    <section id="projects" class="section">
       <div class="container">
         <h2 class="section-title">Проєкти</h2>
       </div>
     </section>
     <!-- Choose-us section -->
-    <section class="section">
+    <section id="choose-us" class="section">
       <div class="container">
         <h2 class="section-title">Чому обирають нас?</h2>
       </div>
     </section>
     <!-- Our-team section -->
-    <section class="section">
+    <section id="team" class="section">
       <div class="container">
         <h2 class="section-title">Наша команда</h2>
       </div>
     </section>
     <!-- Partners section -->
-    <section class="section">
+    <section id="partners" class="section">
       <div class="container">
         <h2 class="section-title">Партнери</h2>
       </div>
     </section>
     <!-- FAQ section -->
-    <section class="section">
+    <section id="faq" class="section">
       <div class="container">
         <h2 class="section-title">Поширені запитання (FAQ)</h2>
       </div>

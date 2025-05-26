@@ -1,6 +1,7 @@
 :root {
   /* Colors */
   --primary-text-color: #000000;
+  --second-text-color: #ffffff;
   --accent-color: #1894c1;
   --hover-accent-color: #1894c1;
   --white-color: #ffffff;
@@ -142,7 +143,7 @@ body::-webkit-scrollbar-track {
 
 .section {
   overflow: hidden;
-  padding: 80px 0;
+  padding: 80px 0 0;
 
   @media (768px<=width) {
     padding: 80px 0;
@@ -170,6 +171,26 @@ body::-webkit-scrollbar-track {
   @media (1440px<=width) {
     max-width: var(--desktop);
     padding: 0 119px;
+  }
+}
+
+.container-header {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 24px;
+
+  @media (360px<=width) {
+    max-width: var(--mobile);
+  }
+
+  @media (768px<=width) {
+    max-width: var(--tablet);
+    padding: 0 16px;
+  }
+
+  @media (1440px<=width) {
+    max-width: var(--desktop);
+    padding: 0 8px;
   }
 }
 
@@ -211,9 +232,157 @@ body::-webkit-scrollbar-track {
   }
 }
 
+.header-hero {
+  background-image: url("./img/header-hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Header section */
+
+.logo-header {
+  object-fit: cover;
+  width: 70px;
+  height: 48px;
+  @media screen and (min-width: 1440px) {
+    width: 158px;
+    height: 64px;
+  }
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: #ffffffe5;
+  padding: 16px 0;
+  @media screen and (min-width: 834px) {
+  }
+}
+
+.menu-nav-header {
+  display: none;
+  @media screen and (min-width: 834px) {
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--accent-color);
+    align-items: center;
+  }
+  @media screen and (min-width: 1440px) {
+    gap: 16px;
+    font-size: 20px;
+  }
+}
+
+.menu-item-header {
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-item-header:hover {
+  width: 20px;
+  @media screen and (min-width: 1440px) {
+    width: 32px;
+  }
+}
+
+.menu-link-header {
+  padding: 0 12px;
+}
+
+.header-menu {
+  max-width: 24px;
+  max-height: 20px;
+  fill: var(--accent-color);
+}
+
+.menu-svg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-button {
+  padding: 4px 4px;
+  border: 1px transparent;
+  background: transparent;
+  margin-right: 8px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 834px) {
+    display: none;
+  }
+}
+
 /* Hero section */
 
+.hero-info {
+  margin-top: 160px;
+  color: var(--second-text-color);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.hero-title {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.hero-button {
+  color: var(--second-text-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 65px;
+  border-radius: 80px;
+  border: none;
+  margin-bottom: 32px;
+}
+
 /* About section */
+
+.about-lists {
+  margin-top: 8px;
+  display: flex;
+  gap: 23px;
+}
+
+.about-list {
+  font-size: 12px;
+  list-style-type: disc;
+  padding-left: 8px;
+  width: 148px;
+}
+
+.about-list li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.about-list .bullet {
+  width: 8px; /* розмір маркера */
+  height: 8px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  margin-right: 3px; /* відстань між маркером і текстом */
+  flex-shrink: 0;
+}
+
 /* Certification section */
 /* Advantages section */
 /* Services section */
