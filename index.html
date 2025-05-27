@@ -30,11 +30,23 @@
             >
               <picture>
                 <source
-                  srcset="./src/img/logo.png 1x, ./src/img/logo-2x.png 2x"
-                  media="(min-width: 320px)"
+                  media="(min-width: 834px)"
+                  srcset="
+                    ./src/img/logo-desk.png    1x,
+                    ./src/img/logo-desk-2x.png 2x
+                  "
                   type="image/png"
                 />
-                <img class="logo-header" src="./src/img/logo.png" alt="Logo" />
+                <source
+                  media="(max-width: 833px)"
+                  srcset="./src/img/logo.png 1x, ./src/img/logo-2x.png 2x"
+                  type="image/png"
+                />
+                <img
+                  class="logo-header"
+                  src="./src/img/logo-desk.png"
+                  alt="Logo"
+                />
               </picture>
             </a>
             <button
@@ -43,8 +55,8 @@
               title="open menu"
               type="button"
             >
-              <svg class="header-menu" width="24" height="20">
-                <use href="img/icons.svg#icon-menu"></use>
+              <svg class="header-menu" width="32" height="32">
+                <use href="./src/img/icons.svg#icon-menu2"></use>
               </svg>
             </button>
             <ul class="menu-nav-header">
@@ -82,14 +94,24 @@
             <p>+38 (067) 329-59-39,</p>
             <p>+38 (063) 675-25-46</p>
             <p>guardexpertt@gmail.com</p>
-            <a target="_blank" rel="noopener" href="">
-              <svg width="24" height="24">
-                <use href="img/icons.svg#icon-linkedin"></use>
+            <a
+              class="link-linkedin"
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/llc-guardexpert-439436332"
+            >
+              <svg class="svg-linkedin" width="24" height="24">
+                <use href="./src/img/icons.svg#icon-linkedin-with-circle"></use>
               </svg>
             </a>
-            <a target="_blank" rel="noopener" href="">
-              <svg width="24" height="24">
-                <use href="img/icons.svg#icon-instagram"></use>
+            <a
+              class="link-instagram"
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/guardexpert_official"
+            >
+              <svg class="svg-instagram" width="26" height="26">
+                <use href="./src/img/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </div>
@@ -125,9 +147,81 @@
       </div>
     </section>
     <!-- Certification section -->
-    <section class="section">
+    <section id="certification" class="section-certification">
       <div class="container">
         <h3 class="second-title">Сертифікація та ліцензії</h3>
+        <div class="swiper-certification">
+          <div class="swiper swiper-certification-init">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="certification-item">
+                  <picture class="gallery-img">
+                    <source
+                      srcset="
+                        ./src/img/certification-1.jpg 1x,
+                        ./src/img/certification-1.jpg 2x
+                      "
+                      media="(min-width: 375px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class=""
+                      loading="lazy"
+                      src="./src/img/certification-1.jpg "
+                      alt="photo"
+                    />
+                  </picture>
+                  <button>Ліцензія ДСНС</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <picture class="gallery-img">
+                  <source
+                    srcset="
+                      ./src/img/certification-2.jpg 1x,
+                      ./src/img/certification-2.jpg 2x
+                    "
+                    media="(min-width: 375px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class=""
+                    loading="lazy"
+                    src="./src/img/certification-2.jpg "
+                    alt="photo"
+                  />
+                </picture>
+                <button>Ліцензія ДСНС</button>
+              </div>
+              <div class="swiper-slide">
+                <picture class="gallery-img">
+                  <source
+                    srcset="
+                      ./src/img/certification-3.jpg 1x,
+                      ./src/img/certification-3.jpg 2x
+                    "
+                    media="(min-width: 375px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class=""
+                    loading="lazy"
+                    src="./src/img/certification-3.jpg "
+                    alt="photo"
+                  />
+                </picture>
+                <button>Ліцензія ДСНС</button>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Advantages section -->

@@ -96,7 +96,7 @@ body {
   background-color: var(--body-bg);
   overflow-x: hidden;
   font-synthesis: none;
-  @media (768px<=width) {
+  @media (834px<=width) {
     font-size: 16px;
   }
 
@@ -145,7 +145,7 @@ body::-webkit-scrollbar-track {
   overflow: hidden;
   padding: 80px 0 0;
 
-  @media (768px<=width) {
+  @media (834px<=width) {
     padding: 80px 0;
   }
 
@@ -163,7 +163,7 @@ body::-webkit-scrollbar-track {
     max-width: var(--mobile);
   }
 
-  @media (768px<=width) {
+  @media (834px<=width) {
     max-width: var(--tablet);
     padding: 0 32px;
   }
@@ -183,7 +183,7 @@ body::-webkit-scrollbar-track {
     max-width: var(--mobile);
   }
 
-  @media (768px<=width) {
+  @media (834px<=width) {
     max-width: var(--tablet);
     padding: 0 16px;
   }
@@ -203,7 +203,7 @@ body::-webkit-scrollbar-track {
   text-align: center;
   color: var(--accent-color);
 
-  @media (768px<=width) {
+  @media (834px<=width) {
     font-size: 36px;
   }
 
@@ -222,7 +222,7 @@ body::-webkit-scrollbar-track {
   text-align: left;
   color: var(--accent-color);
 
-  @media (768px<=width) {
+  @media (834px<=width) {
     font-size: 28px;
   }
 
@@ -238,6 +238,13 @@ body::-webkit-scrollbar-track {
   background-position: center;
   background-size: cover;
   border-radius: 0 0 8px 8px;
+  @media (834px<=width) {
+    background-image: url("./img/header-hero-background-tab.jpg");
+  }
+
+  @media (1440px<=width) {
+    background-image: url("./img/header-hero-background-desk.jpg");
+  }
 }
 
 /* Header section */
@@ -299,8 +306,8 @@ body::-webkit-scrollbar-track {
 }
 
 .header-menu {
-  max-width: 24px;
-  max-height: 20px;
+  max-width: 32px;
+  max-height: 32px;
   fill: var(--accent-color);
 }
 
@@ -311,10 +318,8 @@ body::-webkit-scrollbar-track {
 }
 
 .menu-button {
-  padding: 4px 4px;
   border: 1px transparent;
   background: transparent;
-  margin-right: 8px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -339,6 +344,42 @@ body::-webkit-scrollbar-track {
 .hero-title {
   font-size: 12px;
   font-weight: 700;
+}
+
+.link-linkedin {
+  fill: var(--second-text-color);
+  border: 2px solid var(--second-text-color);
+  width: 24px;
+  height: 24px;
+  display: inline-flex; /* центрування і блоковість */
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px; /* якщо хочеш коло */
+  text-decoration: none;
+  margin: 8px 0;
+  margin-right: 22px;
+}
+
+.link-instagram {
+  background-color: var(--second-text-color);
+  width: 24px;
+  height: 24px;
+}
+
+.link-instagram {
+  fill: var(--primary-text-color);
+}
+
+.link-instagram {
+  width: 24px;
+  height: 24px;
+  display: inline-flex; /* центрування і блоковість */
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body-bg); /* білий фон */
+  border-radius: 8px; /* якщо хочеш коло */
+  border: 2px solid transparent;
+  text-decoration: none;
 }
 
 .hero-button {
@@ -384,6 +425,31 @@ body::-webkit-scrollbar-track {
 }
 
 /* Certification section */
+
+.section-certification {
+  padding-top: 12px;
+}
+.swiper {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .swiper-wrapper {
+    display: flex;
+    gap: 16px;
+  }
+
+  .swiper-slide {
+    flex: 1 1 30%;
+    width: auto !important;
+  }
+
+  /* Сховати стрілки/пагінацію */
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-pagination {
+    display: none !important;
+  }
+}
 /* Advantages section */
 /* Services section */
 /* Projects section */
