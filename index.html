@@ -155,7 +155,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="certification-item">
-                  <picture class="gallery-img">
+                  <picture class="certification-img">
                     <source
                       srcset="
                         ./src/img/certification-1.jpg 1x,
@@ -169,48 +169,59 @@
                       loading="lazy"
                       src="./src/img/certification-1.jpg "
                       alt="photo"
+                      width="257"
+                      height="257"
                     />
                   </picture>
-                  <button>Ліцензія ДСНС</button>
+                  <button class="certification-button">Ліцензія ДСНС</button>
                 </div>
               </div>
               <div class="swiper-slide">
-                <picture class="gallery-img">
-                  <source
-                    srcset="
-                      ./src/img/certification-2.jpg 1x,
-                      ./src/img/certification-2.jpg 2x
-                    "
-                    media="(min-width: 375px)"
-                    type="image/jpg"
-                  />
-                  <img
-                    class=""
-                    loading="lazy"
-                    src="./src/img/certification-2.jpg "
-                    alt="photo"
-                  />
-                </picture>
-                <button>Ліцензія ДСНС</button>
+                <div class="certification-item">
+                  <picture class="certification-img">
+                    <source
+                      srcset="
+                        ./src/img/certification-2.jpg 1x,
+                        ./src/img/certification-2.jpg 2x
+                      "
+                      media="(min-width: 375px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class=""
+                      loading="lazy"
+                      src="./src/img/certification-2.jpg "
+                      alt="photo"
+                      width="257"
+                      height="257"
+                    />
+                  </picture>
+                  <button class="certification-button">Ліцензія</button>
+                </div>
               </div>
               <div class="swiper-slide">
-                <picture class="gallery-img">
-                  <source
-                    srcset="
-                      ./src/img/certification-3.jpg 1x,
-                      ./src/img/certification-3.jpg 2x
-                    "
-                    media="(min-width: 375px)"
-                    type="image/jpg"
-                  />
-                  <img
-                    class=""
-                    loading="lazy"
-                    src="./src/img/certification-3.jpg "
-                    alt="photo"
-                  />
-                </picture>
-                <button>Ліцензія ДСНС</button>
+                <div class="certification-item">
+                  <picture class="certification-img">
+                    <source
+                      srcset="
+                        ./src/img/certification-3.jpg 1x,
+                        ./src/img/certification-3.jpg 2x
+                      "
+                      media="(min-width: 375px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class=""
+                      loading="lazy"
+                      src="./src/img/certification-3.jpg "
+                      alt="photo"
+                      width="257"
+                      height="257"
+                    />
+                  </picture>
+
+                  <button class="certification-button">Сертифікат</button>
+                </div>
               </div>
             </div>
 
@@ -225,33 +236,39 @@
       </div>
     </section>
     <!-- Advantages section -->
-    <section class="section">
+    <section class="section-advantages">
       <div class="container">
         <h3 class="second-title">Переваги співпраці з нами</h3>
-        <ul>
+        <ul class="advantages-list">
           <li>
+            <span class="bullet"></span>
             Професіоналізм та досвід: якісні товари та послуги досвідчених
             спеціалістів - гарантія ефективності і надійності рішень.
           </li>
           <li>
+            <span class="bullet"></span>
             Весь комплекс послуг "під ключ": від консультації до встановлення та
             обслуговування.
           </li>
           <li>
+            <span class="bullet"></span>
             Якісне обладнання: гарантія безпеки, завдяки якісним імпортним та
             вітчизняним матеріалам, що мають відповідні сертифікати та
             забезпечення дотримання актуальних пожежних стандартів.
           </li>
           <li>
+            <span class="bullet"></span>
             Індивідуальні рішення за вартістю типових: адаптовані до специфіки
             вашого об'єкта, що враховують всі його особливості та забезпечують
             максимальну ефективність.
           </li>
           <li>
+            <span class="bullet"></span>
             Оперативність та підтримка: швидке вирішення запитів і професійна
             технічна допомога.
           </li>
           <li>
+            <span class="bullet"></span>
             Довгострокова співпраця передбачає стабільне обслуговування на
             кожному етапі та комфортну цінову політику для замовників.
           </li>
@@ -300,7 +317,84 @@
     </section>
     <!-- Contacts section -->
     <section class="section">
-      <div class="container"></div>
+      <div class="container contacts-container">
+        <h4 class="contacts-title">Наші контакти</h4>
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <img
+              src="./src/img/working-hours.png"
+              alt="Іконка"
+              width="16"
+              height="16"
+            />
+            <p><b>Графік роботи:</b> понеділок-п'ятниця 08:00 – 17:00</p>
+          </li>
+          <li class="contacts-item">
+            <img
+              src="./src/img/phone.png"
+              alt="Іконка"
+              width="16"
+              height="16"
+            />
+            <div>
+              <p>+38 (067) 329-59-39</p>
+              <p>+38 (063) 675-25-46</p>
+            </div>
+          </li>
+          <li class="contacts-item">
+            <img
+              src="./src/img/email.png"
+              alt="Іконка"
+              width="16"
+              height="16"
+            />
+            <div class="emails">
+              <p><b>Email:</b> guardexpertt@gmail.com</p>
+              <p><b>Департамент продажів:</b> sales.guardexpertt@gmail.com</p>
+              <p>
+                <b>Департамент закупівель:</b> purchasing.guardexpert@gmail.com
+              </p>
+              <p><b>Юридичний департамент:</b> legal.guardexpert@gmail.com</p>
+              <p><b>Технічна підтримка:</b> support.guardexpert@gmail.com</p>
+            </div>
+          </li>
+          <li class="contacts-item">
+            <img
+              src="./src/img/location.png"
+              alt="Іконка"
+              width="16"
+              height="16"
+            />
+            <div>
+              <p>ТОВ «Гардексперт»</p>
+              <p>
+                08132, Київська обл., Бучанський р-н, м. Вишневе, вул.
+                Європейська, будинок 27, офіс 5
+              </p>
+            </div>
+          </li>
+        </ul>
+        <picture class="contacts-map">
+          <source
+            media="(min-width: 1440px)"
+            srcset="./src/img/map-1x-desk.png 1x, ./src/img/map-2x-desk.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 834px)"
+            srcset="./src/img/map-1x-tab.png 1x, ./src/img/map-2x-tab.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 833px)"
+            srcset="./src/img/map-1x.png 1x, ./src/img/map-2x.png 2x"
+            type="image/png"
+            width="287"
+            height="159"
+          />
+          <img src="./src/img/map-1x-desk.png" alt="Map" />
+        </picture>
+      </div>
     </section>
     <!-- Footer section -->
     <section class="section">
