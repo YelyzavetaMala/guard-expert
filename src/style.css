@@ -375,11 +375,11 @@ body::-webkit-scrollbar-track {
 }
 
 .about-list .bullet {
-  width: 8px; /* розмір маркера */
+  width: 8px;
   height: 8px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  margin-right: 3px; /* відстань між маркером і текстом */
+  margin-right: 3px;
   flex-shrink: 0;
 }
 
