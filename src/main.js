@@ -1,4 +1,7 @@
+import "./js/services";
+
 import "./style.css";
+
 import Swiper from "swiper";
 import {
   Navigation,
@@ -11,6 +14,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+/*
 let swiperInstance = null;
 
 function initSwiper() {
@@ -46,4 +50,38 @@ function initSwiper() {
 window.addEventListener("DOMContentLoaded", () => {
   initSwiper();
   window.addEventListener("resize", initSwiper);
+});
+*/
+function initResponsiveSwiper(selector, breakpointsConfig) {
+  return new Swiper(selector, {
+    modules: [Pagination, Navigation],
+    breakpoints: breakpointsConfig,
+    pagination: {
+      el: `${selector} .swiper-pagination`,
+      clickable: true,
+    },
+    navigation: {
+      nextEl: `${selector} .swiper-button-next`,
+      prevEl: `${selector} .swiper-button-prev`,
+    },
+  });
+}
+initResponsiveSwiper(".swiper-one", {
+  375: { slidesPerView: 1, spaceBetween: 16 },
+  834: { slidesPerView: 2, spaceBetween: 24 },
+  1440: { slidesPerView: 3, spaceBetween: 32 },
+});
+
+// swiper 2 — по 1, 1, 2 слайди
+initResponsiveSwiper(".swiper-two", {
+  375: { slidesPerView: 1, spaceBetween: 20 },
+  834: { slidesPerView: 2, spaceBetween: 24 },
+  1440: { slidesPerView: 3, spaceBetween: 30 },
+});
+
+// swiper 3 — по 1, 2, 4 слайди
+initResponsiveSwiper(".swiper-three", {
+  375: { slidesPerView: 1, spaceBetween: 16 },
+  834: { slidesPerView: 4, spaceBetween: 20 },
+  1440: { slidesPerView: 4, spaceBetween: 24 },
 });
