@@ -85,7 +85,7 @@
           </div>
         </div>
       </header>
-
+  <main>
       <!-- Hero section -->
       <section>
         <div class="container">
@@ -312,11 +312,35 @@
       </div>
     </section>
     <!-- Feedback section -->
-    <section class="section">
-      <div class="container"></div>
+    <section class="feedback-section">
+      <div class="container">
+        <h4 class="feedback-title">Залишились питання?</h4>
+        <form class="feedback-form" action="#" method="post">
+          
+          <input type="email" id="email" name="email" placeholder="Електронна адреса" required>
+        
+          
+          <div class="phone-input-wrapper">
+            <span class="phone-prefix">+380</span>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Номер телефону"
+              maxlength="9"
+              required
+            />
+          </div>
+        
+        
+          <textarea id="message" name="message" rows="7" placeholder="Напишіть нам ..." required></textarea>
+        
+          <button type="submit">Надіслати повідомлення</button>
+        </form>
+      </div>
     </section>
     <!-- Contacts section -->
-    <section class="section">
+    <section class="contacts-section">
       <div class="container contacts-container">
         <h4 class="contacts-title">Наші контакти</h4>
         <ul class="contacts-list">
@@ -396,10 +420,130 @@
         </picture>
       </div>
     </section>
+
+  </main>
     <!-- Footer section -->
-    <section class="section">
-      <div class="container"></div>
-    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-info">
+          <a
+            class="menu-social-item"
+            target="_self"
+            rel="noopener"
+            href="./index.html"
+          >
+            <picture>
+              <source
+                media="(min-width: 834px)"
+                srcset="
+                  ./src/img/logo-footer-desk.png    1x,
+                  ./src/img/logo-footer-desk-2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                media="(max-width: 833px)"
+                srcset="
+                  ./src/img/logo-footer.png    1x,
+                  ./src/img/logo-footer-2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                class="logo-header"
+                src="./src/img/logo-footer-desk.png"
+                alt="Logo"
+              />
+            </picture>
+          </a>
+          <ul class="footer-list">
+            <li class="">
+              <a class="" href="#about">Про нас</a>
+            </li>
+            <li class="">
+              <a class="" href="#services">Послуги</a>
+            </li>
+            <li class="">
+              <a class="" href="#projects">Проєкти</a>
+            </li>
+            <li class="">
+              <a class="" href="#choose-us">Чому ми?</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li class="">
+              <a class="" href="#team">Команда</a>
+            </li>
+            <li class="">
+              <a class="" href="#partners">Партнери</a>
+            </li>
+            <li class="">
+              <a class="" href="#faq">FAQ</a>
+            </li>
+          </ul>
+          <div class="socials-column">
+          <div class="list-socials">
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/llc-guardexpert-439436332"
+            >
+              <svg class="svg-footer" width="16" height="16">
+                <use href="./src/img/icons.svg#icon-linkedin-with-circle"></use>
+              </svg>
+            </a>
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/guardexpert_official"
+            >
+              <svg class="svg-footer" width="16" height="16">
+                <use href="./src/img/icons.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/llc-guardexpert-439436332"
+            >
+              <svg class="svg-footer" width="16" height="16">
+                <use href="./src/img/icons.svg#icon-viber"></use>
+              </svg>
+            </a>
+          </div>
+        
+          <div class="list-socials">
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/guardexpert_official"
+            >
+              <svg class="svg-footer" width="16" height="16">
+                <use href="./src/img/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/llc-guardexpert-439436332"
+            >
+              <svg class="svg-footer" width="16" height="16">
+                <use href="./src/img/icons.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        </div>
+        <button class="footer-button">Консультація експерта</button>
+        <p class="copyright">© 2025 Guard Expert. Усі права захищено</p>
+      </div>
+    
+  </footer>
     <!-- Modal section -->
 
     <script type="module" src="/src/main.js"></script>
