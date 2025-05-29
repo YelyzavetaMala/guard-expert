@@ -85,3 +85,16 @@ initResponsiveSwiper(".swiper-three", {
   834: { slidesPerView: 4, spaceBetween: 20 },
   1440: { slidesPerView: 4, spaceBetween: 24 },
 });
+
+initResponsiveSwiper(".swiper-four", {
+  375: { slidesPerView: 2, spaceBetween: 16 },
+  834: { slidesPerView: 3, spaceBetween: 20 },
+  1440: { slidesPerView: 7, spaceBetween: 24 },
+});
+
+document.querySelectorAll(".faq-question").forEach((button) => {
+  button.addEventListener("click", () => {
+    const item = button.parentElement;
+    item.classList.toggle("active");
+  });
+});
