@@ -650,6 +650,56 @@ body::-webkit-scrollbar-track {
 }
 
 /* Our-team section */
+.team-container {
+  padding: 0 57px;
+
+  @media screen and (min-width: 834px) {
+    padding: 0 32px;
+  }
+}
+.team-item {
+  border-radius: 8px;
+  height: 257px;
+  width: 257px;
+  margin-bottom: 26px;
+  @media screen and (min-width: 834px) {
+    width: 320px;
+    height: 352px;
+  }
+}
+
+.team-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 250px 16px 16px;
+  height: 47px;
+  width: 225px;
+  background-color: var(--body-bg);
+  border-radius: 8px;
+}
+
+.team-name {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--accent-color);
+  @media screen and (min-width: 834px) {
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+  }
+}
+.team-position {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--accent-color);
+}
+
 /* Partners section */
 .partners-container {
   padding: 0 57px;

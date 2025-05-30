@@ -92,6 +92,12 @@ initResponsiveSwiper(".swiper-four", {
   1440: { slidesPerView: 7, spaceBetween: 24 },
 });
 
+initResponsiveSwiper(".swiper-five", {
+  375: { slidesPerView: 1, spaceBetween: 16 },
+  834: { slidesPerView: 2, spaceBetween: 20 },
+  1440: { slidesPerView: 3, spaceBetween: 24 },
+});
+
 document.querySelectorAll(".faq-question").forEach((button) => {
   button.addEventListener("click", () => {
     const item = button.parentElement;
