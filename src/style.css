@@ -598,6 +598,62 @@ body::-webkit-scrollbar-track {
 }
 
 /* Projects section */
+.project-container {
+  padding: 0 57px;
+
+  @media screen and (min-width: 834px) {
+    padding: 0 32px;
+  }
+}
+
+.project-card {
+  width: 100%;
+  height: 257px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 35px;
+  margin: 0 16px 16px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.project-title {
+  color: var(--accent-color);
+  text-align: center;
+  margin: 0;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.project-btn {
+  padding: 16px;
+  background-color: var(--accent-color);
+  color: var(--second-text-color);
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  transition: background-color 0.3s;
+  margin-top: 8px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
 /* Choose-u section */
 
 .choose-container {

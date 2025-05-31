@@ -97,6 +97,11 @@ initResponsiveSwiper(".swiper-five", {
   834: { slidesPerView: 2, spaceBetween: 20 },
   1440: { slidesPerView: 3, spaceBetween: 24 },
 });
+initResponsiveSwiper(".swiper-six", {
+  375: { slidesPerView: 1, spaceBetween: 16 },
+  834: { slidesPerView: 1, spaceBetween: 20 },
+  1440: { slidesPerView: 1, spaceBetween: 24 },
+});
 
 document.querySelectorAll(".faq-question").forEach((button) => {
   button.addEventListener("click", () => {
