@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/guard-expert/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guard Expert</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/guard-expert/assets/index-CssHwsP1.js"></script>
+    <link rel="stylesheet" crossorigin href="/guard-expert/assets/index-Btb9M-94.css">
+  </head>
+  <body>
+    <div class="header-hero">
+      <!-- Header section -->
+      <header class="header">
+        <div class="container-header">
+          <div class="header-nav">
+            <a
+             
+              target="_self"
+              rel="noopener"
+              href="./index.html"
+            >
+              <picture>
+                <source
+                  media="(min-width: 834px)"
+                  srcset="/guard-expert/assets/logo-desk-C-clhb0M.png 1x, /guard-expert/assets/logo-desk-2x-DllX0zoL.png 2x"
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 833px)"
+                  srcset="data:image/png;base64,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 1x, /guard-expert/assets/logo-2x-BvGduvRu.png 2x"
+                  type="image/png"
+                />
+                <img
+                  class="logo-header"
+                  src="/guard-expert/assets/logo-desk-C-clhb0M.png"
+                  alt="Logo"
+                />
+              </picture>
+            </a>
+            <button
+              id="openModalBtn"
+              class="menu-button"
+              title="open menu"
+              type="button"
+            >
+              <svg class="header-menu" width="32" height="32">
+                <use href="/guard-expert/assets/icons-MZki8_3w.svg#icon-menu2"></use>
+              </svg>
+            </button>
+            <ul class="menu-nav-header">
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#about">Про нас</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#services">Послуги</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#projects">Проєкти</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#choose-us">Чому ми?</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#team">Команда</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#partners">Партнери</a>
+              </li>
+              <li class="menu-item-header">
+                <a class="menu-link-header" href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+  <main>
+      <!-- Hero section -->
+      <section>
+        <div class="container hero-container">
+          <div class="hero-info">
+            <h1 class="hero-title">ТОВ «Гардексперт»</h1>
+            <p class="hero-text">+38 (067) 329-59-39,</p>
+            <p class="hero-text">+38 (063) 675-25-46</p>
+            <p class="hero-mail">guardexpertt@gmail.com</p>
+            <div class="hero-social">
+            <a
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/llc-guardexpert-439436332"
+            >
+            <picture>
+              <source
+                srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK7SURBVHgBvVXNixJhGH/nQx1jN6xoN/aw0MLC4lbLptSpukiGdg/0JHQIunkI+guEPXgVDx5MQeguuOAl6JhXPeRB8OBXUYL4MaMz/R6ZmdxxDjtiPTDzzDvP+3x/MfaPgVs9+P1+t9frvaeq6pxtALPZTAR/p1arKWvEQqFwBsEDWZaV6XQqzxwC+AgpmqZ1crncGbNaDkIXCoC05WtDUHUZfZJJsvnli+f3YcEdjuM0HDWLcwt2feBIhqIotyjUpgKXy7UAQaUL8/mc8kI5+Iqni7MArDpRonsyNxUQ4OcSi6LINZvNd1D4LJPJ+HH+sXrPKdgyQtltwh6Px8ssleYUROuPyWQyOz4+voCSDzj6UFGiJEnaqiKETSNPVwzS4DFjNsasKUByPNVq9bLVag0EQVDi8fibdrvdL5fLnyFHDofDb4+OjvZhSInCh/w9h/AzXalmp4Sdn58fUBEbtRaNRh8YtMFg0K1UKnnjnE6nX2Sz2aer/KPR6CPxoRKX/CSLZBLNNgc+n+9A/+ThhQArb+pnKZlMfoGH3+CZ8Y/t7OykxuPxJe6tyXJaHdNEInG3VCp9LxaLPTyvDUKj0fhkx+C4/EKh0Hs4dR+RkJCPC1MQz/e2oqDX690gTFUzHA6pSKgRWSqV4reiAGBOSnQrjZFlh1KlbkuBLSBs7NoKUG59/ZNmiorhNTFoqP/f7C9RZvqcQmX+tJO12mimi6jhV2DgMCoklJ60t7d3GIlEHsJK9eTk5LFxb3d31xeLxZ5Q9weDwZemIM4SLczuQ1o0NAVlo1t0gPUL69CnhTSn1rWAvnBUwoFA4NAM0enpaReW/qJEAV8ZH2j/tTDCM5dgE3S32y2QDGCawJ0rRFpztO7IE9qAM4dAK1OPQi+fzz9ai7seKjdtN1pAbAMAr4h8dOv1usz+F/wBCoc0gXwu2VQAAAAASUVORK5CYII= 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAXkSURBVHgB7VltSGRVGD7z4Xw4To4frU3mYpAKNkQgy5qFGH6ACfZDNAL1h7sgFgomhT/MNUGXVshEDDYWw34IpSDoblKjJqI/+imbZmaSYGTrt7PO6LjO7Xln7sidcebOnU1nhPWBe++55/N9z3nP+3EOY5e4xP+CzF9BcXGxXq1Wp1osFoNCoZAdHx9zMpmMYyGCHKAxNRrNTkRExO8DAwOPfdVT+spsa2szVVdX3wQD+Xa7/QrHcTKOXiFiwDWUE8TAvwcHB+aMjIx7jY2NcwEbt7S0mGw22yg6cXAXCPv7+z+0t7enixJfWFj43Pb29pfuRrSE4YaAhuPNzc0vSLSFNMuFPxCZFMhbPqUdDgfJIQs3QANHtFCSRFqr1aZ4lAt/IGsGiM8VviG7IJC5aQFtCbu7uzHCQg8qSdsQ2AUFSJMTjcI8DwZEVKVf7QPZFC0/SxBtRKMw75Qa5eXtVFsiFB0sIT2BOo+wrFeRzsWTyETsyVkCxJ/KkyzoIP636enpW93d3XVYxk/xrZ2dnf0c+X+zMCKYnfrz+Pj493V1dYf0g+/e4uLiN0j+wsKIYBiINBqNKmGGUqlU46NiYYQyiLp5WVlZH/b393+bmpq6NTc3ZzSZTDeR/wYLIyQzgE38Egj+BE8Ofjfgm7yI7zXkR4dT8wZkgLQPHofcZU3i8bwjLCfinwAQJwUT0UbQXO4+zhQBGeBnV34IwBLaON5TJKaoTKfTaWkvkLMCh2v/6OjokAwONaI6KFNGRkbqobncxNvx2JjLdlCemn8Yr6opX/KSShIhInR0dPR+b2/vVzxRWvDyODo6Wl9TU/NRTk5OrtVqtXV2dt6Zmpr6CQQbMNkyuCYbaWlpbzU3N38WGxur29vbGweDE2BmEeVW9KXD4r2Cft5Gn9kYR8tPEJMKyXtgYWHh4cjIyIR3fkFBQTExAMLssBM/jo2NeajVra2tDRD75tra2p8NDQ13UW8FwcmJRYL7Lk9ISPiuqqrqfZVKVQvijfxKMCmQzAC8QB1zLa3QlKsQcGgoQdOGZIx3O6yGxWw23wbzC9Bg+97lYIBM/19xcXF3SkpKbGD2FroySGUiGC3kq7cTT5EGI7HxLp+cnNyghwVAWVnZ8fDw8Nf5+fkmTMQNqSsQMp85OTlZ09TUlNLX1/daeXm5kXluVGcawYp1aGjoPpKS3ZNgDNnTwClulZWVcdjs1bAdpdjABhA6h71zd3l5+QEvQidiubKy8is+D5nLSQyIc18BbHBlfX39e5mZmR8j2nsdYpZsMBiKKioqGuPj4695109MTPyHBbEC584A7JcxKSnpXSQNbledjyGuQ6wK8FUI60P+D/CxCOqJ4twZgP2Lgf6/6hxMsOEBxc7OTnJ6eroHA/Pz8xxU7xNBPVGcOwNkgTHzPj1WEBiBcycPKrEnuMHBQckRXqi0kE+C/ISvsvX1dcmm+NwZgOX1R6hfGYd/xaTiwpydPC0uGQg3nh0GyF1mp7UJBWNOnU1GCv6/zbsd1KQVZT53K5ral5aWjryyHfxYkiCZAa8jPZmgvTNNRgeuglxQ7syPioryqxL5yE3u1af3WKI45cz5C1uzs7PzOjo6nCoR0VMEZvsQMYIGDtp1KocLoEVQ8gF8nmzkR1I/iDCtcBdehs/zvK8+qW1XV9dtRHcHaK/GitBqyDFWrq/6YIyJoqioKG8DEJ7P0/JTQC52hk9ixAW4EMGxoEPYp/DfFxwueOQRbUSjx4QLf/iDU4/DUd4fEV1SPpARrSP0aygtwc/xVcHJlcfYwh+9Xr+DS4RHlOYEp86BBnOfQgSoIxP791H/ZFy3xab7MoSo28wfA/AcF6E1zNSGGvsJI0MKQWzMQTuZ8SyJNmhtbX2VLtS4i3XJ5wBND3xd8sn8MVFbW3sDarEA5z0vkEbhLxdYKEDahg7ykHRAo61BS5l7enruwdWe967rV0RKS0ujQHAqGtMRh1vXh+yimxig8XDotb26uvrHzMyMhV3iEmeP/wDGcbFzqOYSBAAAAABJRU5ErkJggg== 2x"
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="social-img"
+                loading="lazy"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK7SURBVHgBvVXNixJhGH/nQx1jN6xoN/aw0MLC4lbLptSpukiGdg/0JHQIunkI+guEPXgVDx5MQeguuOAl6JhXPeRB8OBXUYL4MaMz/R6ZmdxxDjtiPTDzzDvP+3x/MfaPgVs9+P1+t9frvaeq6pxtALPZTAR/p1arKWvEQqFwBsEDWZaV6XQqzxwC+AgpmqZ1crncGbNaDkIXCoC05WtDUHUZfZJJsvnli+f3YcEdjuM0HDWLcwt2feBIhqIotyjUpgKXy7UAQaUL8/mc8kI5+Iqni7MArDpRonsyNxUQ4OcSi6LINZvNd1D4LJPJ+HH+sXrPKdgyQtltwh6Px8ssleYUROuPyWQyOz4+voCSDzj6UFGiJEnaqiKETSNPVwzS4DFjNsasKUByPNVq9bLVag0EQVDi8fibdrvdL5fLnyFHDofDb4+OjvZhSInCh/w9h/AzXalmp4Sdn58fUBEbtRaNRh8YtMFg0K1UKnnjnE6nX2Sz2aer/KPR6CPxoRKX/CSLZBLNNgc+n+9A/+ThhQArb+pnKZlMfoGH3+CZ8Y/t7OykxuPxJe6tyXJaHdNEInG3VCp9LxaLPTyvDUKj0fhkx+C4/EKh0Hs4dR+RkJCPC1MQz/e2oqDX690gTFUzHA6pSKgRWSqV4reiAGBOSnQrjZFlh1KlbkuBLSBs7NoKUG59/ZNmiorhNTFoqP/f7C9RZvqcQmX+tJO12mimi6jhV2DgMCoklJ60t7d3GIlEHsJK9eTk5LFxb3d31xeLxZ5Q9weDwZemIM4SLczuQ1o0NAVlo1t0gPUL69CnhTSn1rWAvnBUwoFA4NAM0enpaReW/qJEAV8ZH2j/tTDCM5dgE3S32y2QDGCawJ0rRFpztO7IE9qAM4dAK1OPQi+fzz9ai7seKjdtN1pAbAMAr4h8dOv1usz+F/wBCoc0gXwu2VQAAAAASUVORK5CYII="
+                alt="photo desc"
+                width="24"
+                height="24"
+              />
+            </picture>
+            </a>
+            <a
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/guardexpert_official"
+            >
+            <picture>
+              <source
+                srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALNSURBVHgBxVXNblJBFJ77A5jgpgnaCpquuuhK7cKa6E6Npm7lCdqkMW2TPkLfgBCiBEh4BhfaaGyCGg1doFtYkAAREIhh0/LPveN3rnPxci8g1IUnuTCZmfOd78z55gxj/8kktrhJ80xK4tOj0ejVXC53h3N+WZIkbZIz1hS32322trb2bXd39wemZJoW38RgUiaTcXU6nU98QYNPOpVKqRaSDpOPjo5U7G0Nh0PyGc6JrZNpmkbjNhEUmTjYM2IhNupzgvN+v897vd5r+LWJGGVvxRxZJBLxCx87c20wGDgCijn6zsgfQd5QJrQWi8V8Jq5qDvL5/IYYKuYc9lMwFVaB03O/358GS7nZbG5ub2+/BOvryOAS9pwjoBdi0Il5Npu9j/9XYwFgXuYQCVfB7MTr9T4KBoPu5eXlJwDhtVrteGdn50ar1XoPFT0kUi6Xy6gj/YCEx5EB2OhWdDBicCoTeLFYvL26upphf4rHK5XKBq2BRBl7AyLAb1BVHcnaUW3T4CAlEok9MFcA/hUgI21TYQOBQIaywtHtWcHtprIZ5vP5TldWVrYwlAAyIoNjMcZYe4y6fJmFIc9aRKr6lCUjG1mWqU4Ku2iAarV6DwV9h6FOshTA3ByHw+HjRqNxl81j+/v7wQk6L9NaoVC4xccvn1Yul28aqWAP1cRqh4eHz0zcUQ0URRnLBsfDoawApEgyJSmqBwcHT2kN0n0bj8cHuLUnuCukIMpsdHMhU8URAPo+tyUlY27o8XgegNT3ZDK5t7S0dEp1qdfrW1DPCyJAeMwmFuzpMbsB4IroXIu0Cs02bfiGQqFrdnyz2X0UnXTuZmcxo6O22+20FXPsSJC2CxtbtJE68ALglCX9t6nlsynqNB4K2kBtmy9o3W73g3gLxh6cqU8mnWOpVNoUjWvihSPlQQi99fX1z3gyf7K/PJn2QIvaRXz+3X4B0644UGkPnb8AAAAASUVORK5CYII= 1x, data:image/png;base64,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 2x"
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="social-img"
+                loading="lazy"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALNSURBVHgBxVXNblJBFJ77A5jgpgnaCpquuuhK7cKa6E6Npm7lCdqkMW2TPkLfgBCiBEh4BhfaaGyCGg1doFtYkAAREIhh0/LPveN3rnPxci8g1IUnuTCZmfOd78z55gxj/8kktrhJ80xK4tOj0ejVXC53h3N+WZIkbZIz1hS32322trb2bXd39wemZJoW38RgUiaTcXU6nU98QYNPOpVKqRaSDpOPjo5U7G0Nh0PyGc6JrZNpmkbjNhEUmTjYM2IhNupzgvN+v897vd5r+LWJGGVvxRxZJBLxCx87c20wGDgCijn6zsgfQd5QJrQWi8V8Jq5qDvL5/IYYKuYc9lMwFVaB03O/358GS7nZbG5ub2+/BOvryOAS9pwjoBdi0Il5Npu9j/9XYwFgXuYQCVfB7MTr9T4KBoPu5eXlJwDhtVrteGdn50ar1XoPFT0kUi6Xy6gj/YCEx5EB2OhWdDBicCoTeLFYvL26upphf4rHK5XKBq2BRBl7AyLAb1BVHcnaUW3T4CAlEok9MFcA/hUgI21TYQOBQIaywtHtWcHtprIZ5vP5TldWVrYwlAAyIoNjMcZYe4y6fJmFIc9aRKr6lCUjG1mWqU4Ku2iAarV6DwV9h6FOshTA3ByHw+HjRqNxl81j+/v7wQk6L9NaoVC4xccvn1Yul28aqWAP1cRqh4eHz0zcUQ0URRnLBsfDoawApEgyJSmqBwcHT2kN0n0bj8cHuLUnuCukIMpsdHMhU8URAPo+tyUlY27o8XgegNT3ZDK5t7S0dEp1qdfrW1DPCyJAeMwmFuzpMbsB4IroXIu0Cs02bfiGQqFrdnyz2X0UnXTuZmcxo6O22+20FXPsSJC2CxtbtJE68ALglCX9t6nlsynqNB4K2kBtmy9o3W73g3gLxh6cqU8mnWOpVNoUjWvihSPlQQi99fX1z3gyf7K/PJn2QIvaRXz+3X4B0644UGkPnb8AAAAASUVORK5CYII="
+                alt="photo desc"
+                width="24"
+                height="24"
+              />
+            </picture>
+            </a>
+          </div>
+          </div>
+          <button class="hero-button">Консультація експерта</button>
+        </div>
+      </section>
+    </div>
+    <!-- About section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Про нас</h2>
+        <p>
+          Ми надаємо весь комплекс послуг протипожежного захисту: консультація,
+          проєктування та супровід експертизи, продаж/монтаж обладнання,
+          сервісні послуги щодо:
+        </p>
+        <div class="about-lists">
+          <ul class="about-list">
+            <li><span class="bullet"></span>систем пожежної сигналізації;</li>
+            <li><span class="bullet"></span>систем пожежогасіння;</li>
+            <li><span class="bullet"></span>систем оповіщення;</li>
+            <li>
+              <span class="bullet"></span>систем раннього виявлення надзвичайних
+              ситуацій;
+            </li>
+          </ul>
+          <ul class="about-list">
+            <li><span class="bullet"></span>систем вентиляції;</li>
+            <li><span class="bullet"></span>систем кондиціонування;</li>
+            <li><span class="bullet"></span>вогнезахисту конструкцій.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Certification section -->
+    <section id="certification" class="section-certification">
+      <div class="certification-container">
+        <h3 class="second-title">Сертифікація та ліцензії</h3>
+        <div class="swiper-certification">
+          <div class="swiper swiper-one">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="certification-item">
+                  <picture class="certification-img">
+                    <source
+                      srcset="/guard-expert/assets/certification-1-Dbi8I8I1.jpg 1x, /guard-expert/assets/certification-1-Dbi8I8I1.jpg 2x"
+                      media="(min-width: 375px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class=""
+                      loading="lazy"
+                      src="./src/img/certification-1.jpg "
+                      alt="photo"
+                      width="257"
+                      height="257"
+                    />
+                  </picture>
+                  <button class="certification-button">Ліцензія ДСНС</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="certification-item">
+                  <picture class="certification-img">
+                    <source
+                      srcset="/guard-expert/assets/certification-2-PreZTgq0.jpg 1x, /guard-expert/assets/certification-2-PreZTgq0.jpg 2x"
+                      media="(min-width: 375px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class=""
+                      loading="lazy"
+                      src="./src/img/certification-2.jpg "
+                      alt="photo"
+                      width="257"
+                      height="257"
+                    />
+                  </picture>
+                  <button class="certification-button">Ліцензія</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="certification-item">
+                  <picture class="certification-img">
+                    <source
+                      srcset="/guard-expert/assets/certification-3-OKc7TuNN.jpg 1x, /guard-expert/assets/certification-3-OKc7TuNN.jpg 2x"
+                      media="(min-width: 375px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class=""
+                      loading="lazy"
+                      src="./src/img/certification-3.jpg "
+                      alt="photo"
+                      width="257"
+                      height="257"
+                    />
+                  </picture>
+
+                  <button class="certification-button">Сертифікат</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Advantages section -->
+    <section class="section-advantages">
+      <div class="container">
+        <h3 class="second-title">Переваги співпраці з нами</h3>
+        <ul class="advantages-list">
+          <li>
+            <span class="bullet"></span>
+            Професіоналізм та досвід: якісні товари та послуги досвідчених
+            спеціалістів - гарантія ефективності і надійності рішень.
+          </li>
+          <li>
+            <span class="bullet"></span>
+            Весь комплекс послуг "під ключ": від консультації до встановлення та
+            обслуговування.
+          </li>
+          <li>
+            <span class="bullet"></span>
+            Якісне обладнання: гарантія безпеки, завдяки якісним імпортним та
+            вітчизняним матеріалам, що мають відповідні сертифікати та
+            забезпечення дотримання актуальних пожежних стандартів.
+          </li>
+          <li>
+            <span class="bullet"></span>
+            Індивідуальні рішення за вартістю типових: адаптовані до специфіки
+            вашого об'єкта, що враховують всі його особливості та забезпечують
+            максимальну ефективність.
+          </li>
+          <li>
+            <span class="bullet"></span>
+            Оперативність та підтримка: швидке вирішення запитів і професійна
+            технічна допомога.
+          </li>
+          <li>
+            <span class="bullet"></span>
+            Довгострокова співпраця передбачає стабільне обслуговування на
+            кожному етапі та комфортну цінову політику для замовників.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Services section -->
+    <section id="services" class="section">
+      <div class="container services-container">
+        <h2 class="section-title">Послуги</h2>
+        
+          <div class="swiper swiper-two">
+            <div class=" swiper-wrapper">
+              <div class="swiper-slide services-item ">
+                <div class="services-info-card">
+                
+                    <picture>
+                      <source
+                        srcset="/guard-expert/assets/services1-XXQQ8ylx.png 1x, /guard-expert/assets/services1-XXQQ8ylx.png 2x"
+                        media="(min-width: 375px)"
+                        type="image/png"
+                      />
+                      <img
+                        class="services-img"
+                        loading="lazy"
+                        src="/guard-expert/assets/services1-XXQQ8ylx.png"
+                        alt=""
+                        width="80"
+                        height="80"
+                      />
+                    </picture>
+                  <h4 class="services-title">Проєктування систем пожежної сигналізації</h4>
+                  <p class="services-text">
+                    Проєктування систем пожежної сигналізації, пожежогасіння, раннього виявлення надзвичайних ситуацій та оповіщення населення, систем вентиляції та кондиціонування, систем засобів зв’язку з урахуванням вимог GRS.
+                  </p>
+                </div>
+                <button class="services-button">Детальніше →</button>
+              </div>
+              <div class="swiper-slide services-item ">
+                <div class="services-info-card">
+                
+                    <picture>
+                      <source
+                        srcset="/guard-expert/assets/services2-DRJy7dCA.png 1x, /guard-expert/assets/services2-DRJy7dCA.png 2x"
+                        media="(min-width: 375px)"
+                        type="image/png"
+                      />
+                      <img
+                        class="services-img"
+                        loading="lazy"
+                        src="/guard-expert/assets/services2-DRJy7dCA.png"
+                        alt=""
+                        width="80"
+                        height="80"
+                      />
+                    </picture>
+                  <h4 class="services-title">Монтаж та постачання обладнання для систем пожежної сигналізації</h4>
+                  <p class="services-text">
+                    Постачання обладнання, монтаж, підтримка експлуатаційної придатності (технічне обслуговування) систем пожежної сигналізації, оповіщення про пожежу та управління евакуацією людей, устаткування для передачі тривожних сповіщень.
+                  </p>
+                </div>
+                <button class="services-button">Детальніше →</button>
+              </div>
+              <div class="swiper-slide services-item ">
+                <div class="services-info-card">
+                
+                    <picture>
+                      <source
+                        srcset="/guard-expert/assets/services3-Bh7UEuxi.png 1x, /guard-expert/assets/services3-Bh7UEuxi.png 2x"
+                        media="(min-width: 375px)"
+                        type="image/png"
+                      />
+                      <img
+                        class="services-img"
+                        loading="lazy"
+                        src="/guard-expert/assets/services3-Bh7UEuxi.png"
+                        alt=""
+                        width="80"
+                        height="80"
+                      />
+                    </picture>
+                  <h4 class="services-title">Системи пожежогасіння</h4>
+                  <p class="services-text">
+                    Постачання обладнання, монтаж, підтримання експлуатаційної придатності (технічне обслуговування) систем пожежогасіння (водяних, пінних, газових, порошкових, аерозольних).
+                  </p>
+                </div>
+                <button class="services-button">Детальніше →</button>
+              </div>
+              <div class="swiper-slide services-item ">
+                <div class="services-info-card">
+                
+                    <picture>
+                      <source
+                        srcset="/guard-expert/assets/services4-CLCO_Y71.png 1x, /guard-expert/assets/services4-CLCO_Y71.png 2x"
+                        media="(min-width: 375px)"
+                        type="image/png"
+                      />
+                      <img
+                        class="services-img"
+                        loading="lazy"
+                        src="/guard-expert/assets/services4-CLCO_Y71.png"
+                        alt=""
+                        width="80"
+                        height="80"
+                      />
+                    </picture>
+                  <h4 class="services-title">Обслуговування систем пожежної безпеки</h4>
+                  <p class="services-text">
+                    Обслуговування систем пожежної сигналізації, оповіщення про пожежу та пожежогасіння: перевірка, налаштування та ремонт обладнання з метою забезпечення його безперебійної роботи.
+                  </p>
+                </div>
+                <button class="services-button">Детальніше →</button>
+              </div>
+              <div class="swiper-slide services-item ">
+                <div class="services-info-card">
+                
+                    <picture>
+                      <source
+                        srcset="/guard-expert/assets/services5-oA08VNP6.png 1x, /guard-expert/assets/services5-oA08VNP6.png 2x"
+                        media="(min-width: 375px)"
+                        type="image/png"
+                      />
+                      <img
+                        class="services-img"
+                        loading="lazy"
+                        src="/guard-expert/assets/services5-oA08VNP6.png"
+                        alt=""
+                        width="80"
+                        height="80"
+                      />
+                    </picture>
+                  <h4 class="services-title">Вогнезахисна обробка конструкцій</h4>
+                  <p class="services-text">
+                    Обробка матеріалів та конструкцій (вогнезахисне просочування поверхневе, вогнезахисне обробляння (фарбування, штукатурення, обмотування, облицювання), вогнезахисне заповнення для забезпечення  стійкості до високих температур.
+                  </p>
+                </div>
+                <button class="services-button">Детальніше →</button>
+              </div>
+              <div class="swiper-slide services-item ">
+                <div class="services-info-card">
+                
+                    <picture>
+                      <source
+                        srcset="/guard-expert/assets/services6-20-TAx71.png 1x, /guard-expert/assets/services6-20-TAx71.png 2x"
+                        media="(min-width: 375px)"
+                        type="image/png"
+                      />
+                      <img
+                        class="services-img"
+                        loading="lazy"
+                        src="/guard-expert/assets/services6-20-TAx71.png"
+                        alt=""
+                        width="80"
+                        height="80"
+                      />
+                    </picture>
+                  <h4 class="services-title">Консультування з питань пожежної безпеки</h4>
+                  <p class="services-text">
+                    Розробка концептуальних рішень та рекомендації з підбору обладнання, відповідно запланованому бюджету.
+                  </p>
+                </div>
+                <button class="services-button">Детальніше →</button>
+              </div>
+              
+            </div>
+              <div class="swiper-pagination"></div>
+    
+            <div class="swiper-button-prev swiper-btn-prev"></div>
+            <div class="swiper-button-next swiper-btn-next"></div>
+    
+            <div class="swiper-scrollbar"></div>
+    
+          </div>
+          
+      </div>
+    </section>
+    <!-- Projects section -->
+    <section id="projects" class="section">
+      <div class="project-container">
+        <h2 class="section-title">Проєкти</h2>
+    
+        <div class="swiper swiper-six">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide projects-item">
+              <div class="project-card" style="background-image: url('/guard-expert/assets/study-C4IRRKyo.jpg');">
+                <div class="project-overlay">
+                  <h3 class="project-title">Укриття у дошкільних, шкільних та навчальних закладах середньої та вищої освіти
+                  </h3>
+                </div>
+              </div>
+              <button class="project-btn">Детальніше →</button>
+              <div class="project-text">
+                <ul class="project-text-list">
+                  <li><span class="bullet"></span>Спроєктовані системи пожежної сигналізації та пожежогасіння - безпечний і комфортний простір створений відповідно до вимог Міністерства освіти і науки України та програми укриттів для закладів освіти "Моя Фортеця".</li>
+                  <li><span class="bullet"></span>Консультування, аудит, проєктування, монтаж та технічна підтримка. </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide projects-item">
+              <div class="project-card" style="background-image: url('/guard-expert/assets/medical-CnxAEi0c.jpg');">
+                <div class="project-overlay">
+                  <h3 class="project-title">Міські, районні, національні лікарні та санаторії</h3>
+                </div>
+              </div>
+              <button class="project-btn">Детальніше →</button>
+              <div class="project-text">
+                <ul class="project-text-list">
+                  <li><span class="bullet"></span>Підтримання експлуатаційної придатності (технічне обслуговування) автоматичної системи протипожежного захисту у закладах Міністерства охорони здоров'я. </li>
+                  <li><span class="bullet"></span>Консультування, аудит, проєктування, монтаж та технічна підтримка закладів по всій території України. </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide projects-item">
+              <div class="project-card" style="background-image: url('/guard-expert/assets/industrial-BZ2NebUk.jpg');">
+                <div class="project-overlay">
+                  <h3 class="project-title">Промислові підприємства усіх напрямків діяльності</h3>
+                </div>
+              </div>
+              <button class="project-btn">Детальніше →</button>
+              <div class="project-text">
+                <ul class="project-text-list">
+                  <li><span class="bullet"></span>Проєктування, монтаж та технічна підтримка систем пожежної сигналізації, евакуації та пожежогасіння на промислових об'єктах різних галузей.  </li>
+                  <li><span class="bullet"></span>Консультування, аудит, проєктування, монтаж та технічна підтримка.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide projects-item">
+              <div class="project-card" style="background-image: url('/guard-expert/assets/malls-BXQvaZqo.jpg');">
+                <div class="project-overlay">
+                  <h3 class="project-title">ТРЦ, бізнес-центри, офісні центри, банки</h3>
+                </div>
+              </div>
+              <button class="project-btn">Детальніше →</button>
+              <div class="project-text">
+                <ul class="project-text-list">
+                  <li><span class="bullet"></span>Забезпечення цілодобового протипожежного захисту для розважальних та офісних приміщень. </li>
+                  <li><span class="bullet"></span>Консультування, аудит, проєктування, монтаж та технічна підтримка.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+    
+         
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev swiper-btn-prev"></div>
+          <div class="swiper-button-next swiper-btn-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Choose-us section -->
+    <section id="choose-us" class="section">
+      <div class="choose-container">
+        <h2 class="section-title">Чому обирають нас?</h2>
+        <div class="swiper swiper-three">
+          <div class=" swiper-wrapper">
+            <div class="swiper-slide choose-item ">
+              <div class="choose-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/guard-expert/assets/choose-us1-Cn5MAU5L.png"
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="choose-img"
+                      loading="lazy"
+                      src="/guard-expert/assets/choose-us1-Cn5MAU5L.png"
+                      alt=""
+                      width="105"
+                      height="105"
+                    />
+                  </picture>
+                <p class="choose-text">
+                  Професійна команда з досвічених спеціалістів.
+                </p>
+              </div>
+              
+            </div>
+            <div class="swiper-slide choose-item ">
+              <div class="choose-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/guard-expert/assets/choose-us2-Ch8kdd-b.png"
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="choose-img"
+                      loading="lazy"
+                      src="/guard-expert/assets/choose-us2-Ch8kdd-b.png"
+                      alt=""
+                      width="105"
+                      height="105"
+                    />
+                  </picture>
+                <p class="choose-text">
+                  Сучасне обладнання  від перевірених виробників.
+                </p>
+              </div>
+              
+            </div>
+            <div class="swiper-slide choose-item ">
+              <div class="choose-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABACAYAAABFqxrgAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA1VSURBVHgB7VoJVJNXFn5/QiBAICBhD2TfAwRklS2RRahrVbBuraIFtZW6V2t7/LW2TuvUadVqdY51jqP2FDrtTGs7WhewbrVq1aOCgFBXOii7SYAE8ua9kL+lHMROCZXOyXcOh7z73/fy/nvvu9sLAA444IADDjjggAMOOODAY0CA3x8ESZLoe88zT5y4+6/a+6YEAAlCEOhSEps4bpzy2jUit7i4C/yOoIFBRE4OoOP/JKl1gvAngcPGH4/qtuwoN5RVGtJFIa6lvt60G5erDKN37dnfdZPfwKfmF+Xk0Pv6/IcBfnH8X5safi5EKIE8sbwrTKNsCotQNgfy5JAnlJjXrx7Jo/jzZiTmcoJEMIgvhVHR4Q8kcnmbSCazSJUK04TR0ft7rmlvDNZxwOtCpVJW32wkfCLlbifpNLqpvtkksnRBlo+38/EvD56fVFSUQ8/NtZo+gSwF/GltFu/QsR8/M7Z3cTxYTo3OdMJY+6BNUN8C/BVC10NHjl7MAn8gEAvmaqd4+UvgjCkJ+X0xFBWBvsy7T6UgazrsHSCA5LJMvx7Hym4YFPNCgGVVjcvYLBrY+/GZnXjjBAGQrrs1jj+XlWmJ15e7ijrM5hAaoLma6V23+NLmqoKCC+Ye/Miv5NCVSv2k769Vttz+j34+oq8DQxl48xBCAp/1QJ4UIg1+Tz0jyW6Br3ohLUGn01wKFUotHhwhdPcWQjdvAfTwEUD/EAlMGBF+vTBfm9Q952cfIFdKDAq1oh1/zrGzk7SbaeENk2Rp53PTRsw/cvL+trZ2M1i3KIpTb4poAqCUdu2aL7xz53pZeY1RynanwUiV99c8rtvf3BhOFQwn0Gk0Q1H1rYd5F8uaxxraCCAVOF8+feqKRqvVOpWUlHYVFuie+uiLuwe8PGlg7MiAlL9sP34iP384Y+fOC2YwFEBpTI4cobe/GCrVspa3VmRzscbwsz0bZ7qHCKQwAGl6ytNxb6M8od/QPGl87PaAECkUy6SdJWg+fllMf3F28iiBWAqHBYihThd5HNOoMDwkMGKE+rtgdARyJ8UU4jF2fJRwgvliGBwqhq8tHqXCR6Y/IUCyO3cpXJCq8w8WQalC1obH3ZbWPS8rPWpvEF8Ox2UP3wuGCjZtynH150rguKeiD+BxTw8en6A+7xskga8tSY/8X84y9i0vztFOwBaRkR55kKKTNiHFxYXdUYWpDGCo4M+kluPpK4D5zyVhK6AEQCx7KS3c218Ex4+J3fMrl7I61tWLRwZThPSRkaXYYS7KHxWIn1H0MdmxJ2RKpV38gV3S5mVkab3/MEZ7WXXrS2gIbWR4tbxpK5NJB2mZPs9TGuwPOHzOQ+f+nV037s7Mjd+MaUkpfhO7EL3mXsNmFDeptUHlDy3xHG/6DTCUMHlC7K7AUCkk88e4UTSxVGJKTo64Ro2pY9JXwoO1vGieVssJFMJQgRhu2pTgSvFFRSnrI6LUzRTvyoXpkZ4cAVw4N3UqsEOEs4sl4M3yuV77WvRm0OlqCMG0zWuyPVv0XYxAP2YJxbd2rZY+cWz0BzgR2mHz+BjYV6x9OXP4/gN3S+hoRwsXCFlcLtdEJUy8ENaFxiYze8eO7jntHZBn6oQgiMM8112RDgx2yRjxZrMzHqzwcHcCPt6wDtMemi3uJnRi2e6MGoqvoQ5oD37TUBAVJc8o2HlBhENfU5PQEi4zSjd/WHOOgBawtEARaDAYO2w1hRVsd+eLpi6Y2drq44yG5gBvooTlSgelF+5vO3SYzAQDxIAtAZvxBjKL/+2V1lFRcvevF5OlVrMlYCfWJCBoNGeKd8v20iPaOPbeH+uhMCVRfQ4nOlEqI2/L7ooyOjruhXkKvhEY63HS1fM7OkwWXxoyCoPBZBXMyreOtESqWKUXygwZL0wT8Ho6zN+CAQsBO6tT39a95+JCB9r00MlUYSR2GfbQHWmr7r4xjuJFx4b21deXZoq5jOOVt83Rk8cNL96+p7IaAAsofFYgu1zpfre3ADAamtoUbBbDhJ5Z02ZcfU5OChnNoBOg/Hb7uz0d5hNDSlJYdZhG3dSbHhYha47QqH5BL7ElUEmJ6pO4rzDMn49yiJTI/hIooUTSOVKnudabLpZK2+MiOWfBAGEXx+jPcTnyoMHkVViQIsFaspGJCIX3/rt1HV6LF2vFFF2HNI0FcfLU1SRtNHvdgmcEcrrnyMtICJbe62LBLHxel/qgyUKX8D3X2aKFNZdYODs5tVkPXYJ8XT4HTxp4Qzhj9A0WQKFUCjesTBMW5eCUmaRtXJbpzgkUwAiNvBbz9swYH9cX+LkekZv5IgnspnVbS8GcpKxAngSKpJIOag/gSQNXeu+szgzhiaQQx/lXX9LJ8Ibxi06dEr/EB6XNWRma3Zi3h6U8ElTZnZwUfsEnUAIL5iSndRdjgDZ/TvIELz8R1Gjkdfjli4ZSAYVfDm8Saw5Vk9YIQWWJKUmqs35cKczK1PwTj20W0UfC1G3q+H98vKrSjyuD2emafbbHVn6JXNY1PFp9v3v9wek5Dgh489MmxW0MCBHBTYsTXDGNSop0KeFHfVAJjBsjC/JTdX3Nxy81b1ZKnkAiQRYlhmPHRH+I6ZT1bH0zzccnUARnTUt+BdixF2JXSeKkae5Mxp22dgswM3zx2gRKiszYESKHmDZ7esKYk+cbP9/76b1jQonMEhLgesXVjX4XwC6G3mjh79pzT9KitxBcX4bh6ZygzE2bj52GkKQRBGltxjY1OXt1ok+uTPAQ/FyjDBh2v3fwZtEvQnRMb9Tdz4a2bepssZ8nGfVVVUUFber4gGwpz+1Ei6GTX1XTmv3D3Y6RLa2dgREyz5I5U/gpZdeuszyHHfsWWNOQ7qiBjgm4+UAfg7Iv4ObKuAzsiEHxqqiz1Ko3Ao+sVM4sfx9mJYtFu/UyebgW+wj0Z7F9r1VEVJSg6gRqXFycQ8OpM+4wd3R2ie43mLRHztS96USDndWVVQxgR9hdCFSvMSxMYWg2WNyaWszAGWWTof7O9c+O4sdxo768lZsL+r1mw45TJWrkfXzg3sW6hk5Ps9kCAnxdgRsTNs2ZzQsMCGB19qwtBopBi68hQimMlHsc4AW6vd5s7Mw6ea5hbSuqMt9eHOZ58LyLsbi42EK133vOw9Hh3TezAl7fUlXr6+0M4zXeq/057iUnvqv7FNDp5jOnL/HAUAc25wUomXFh8+GrhRkSioZKay6+ZpOhELpiYXIsMnP19Nz47WhswmEvd2LsX5fOTxq+YlHaBK5AYu0pkOQYt+6widbMS3mWhVr0uOtk7+TI7o4Ra7aiWr8BXbQ+XL/5cBVFayTiavOnCyORaTu9v+/e2Y27q65cLNfnMRk06O3JaCyvbp/1QVHt+a1/r/mMySA6CuaKggDQW3sKuBoVq/2Lmc4EqLljWDMkCqZ+QGCf4BsshtNyo98AvY4blTbjy5WlC9KT/BDfzJy4mQVzEzPYvkJILs1MWbIgZQTm6euaLl2nOSeRK6jmqt2swa6WgM947Z2uWW1tFqBR+m2BvfRVbPvdwXs7Sk/VN+pjzKg9EJlA+ySNG3TcBWm54mbTxE3bvjmNeXo7T3wEIhWeq2vvd7itLkwZYY+O0qAhPj68JiZGdetxfFHDVfcSE8PKqXGaLuK8Uq1ofdy8UJHUnJERdQLYEXazBOy83ngjzf9KxUNBhPynsrdPPnw7VVFjCAqTe62l6oUwybA1N2vbPVYuShP25/iiFex/Xy1vTSoilc72uqG2mxCw8yq7bFjORDlBTJJpT398F6sbl7u5OYGAEPon1hYccnReQfCQF4sOb97Wv/Yox4eFEy5kv9hi6AKltzk5xFA8EKowZasuNfxCH49+sd2wcGVDSlL4ld5MWZnDj6nDlfqetL60jfoTjbHx4XeAnWC3lju5TKu+cdvoIeS7r8C0VauSffNmJC7PSNOc3bZhtJetEiRQo0VQecs4TCH2WtPzBbGW1UL2erSGO7lUK8djHE3WL9JJY2KV1VNz495fheiYVy1jv1pVo+duIkcNG4wfbfxmjB0dXSJXKc3z87TzFGp5C05sfFFyJJbKoUotx1WftTP0zKT493AILeqjp4BfKFggMaOLnI9tvQjCL1gIkYW1c/lSyEJhVK5StM19LnGbUKKEORNidgA7wG5SDAwVQhcXFwtqi9PCpawrUgF7q9CHue+Wvk2z5x+1J1NjPPd/8dXF6QqVzBDk61p5tPRSZF/rjMmKPny95mHyjcoKZrou4szlSkP8+hl8LyBsMl495zG+6lbLiisVrTEMFxfgyuhqLS+rYIOhAGt1uEirmZ+XOG43qWX2eGQV8uisyI88fIRw0XzdEvyrFJRWjwWg76u45QtTk5lePLgwL/kVJlsAZz4TO4dqsPacs6QgOW3ZshF+v+aO80nglyZu2yRqubUKJHKIf6xha5g+ygoJsUxqFkgUMDFRbW2zD6lz/1tBokbs+2QOixPAgynJ6pOP4x+TrfmC4xdqFRbVdP2/AIoOzlQSVETmOD+Kj+pJbl4z3RMJwRk44IADDjjggAMOOPBk8V/bpXyiUCwbfQAAAABJRU5ErkJggg=="
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="choose-img"
+                      loading="lazy"
+                      src="data:image/png;base64,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"
+                      alt=""
+                      width="105"
+                      height="105"
+                    />
+                  </picture>
+                <p class="choose-text">
+                  Гарантія якості на послуги та матеріали.
+                </p>
+              </div>
+              
+            </div>
+            <div class="swiper-slide choose-item ">
+              <div class="choose-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="data:image/png;base64,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"
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="choose-img"
+                      loading="lazy"
+                      src="data:image/png;base64,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"
+                      alt=""
+                      width="105"
+                      height="105"
+                    />
+                  </picture>
+                <p class="choose-text">
+                  Швидка реакція на запити і сервісна підтримка.
+                </p>
+              </div>
+              
+            </div>
+            
+          </div>
+            <div class="swiper-pagination"></div>
+  
+          <div class="swiper-button-prev swiper-btn-prev"></div>
+          <div class="swiper-button-next swiper-btn-next"></div>
+  
+          <div class="swiper-scrollbar"></div>
+  
+        </div>
+      </div>
+    </section>
+    <!-- Our-team section -->
+    <section id="team" class="section">
+      <div class="team-container">
+        <h2 class="section-title">Наша команда</h2>
+        <div class="swiper swiper-five">
+          <div class=" swiper-wrapper">
+            <div class="swiper-slide team-item " style="background-image: url('/guard-expert/assets/team1-CHZfccYb.jpg');">
+              <div class="team-info-card" >
+                <h4 class="team-name">Анастасія Хахалєва</h4>
+                <p class="team-position">Директор</p>
+              </div>
+            </div>
+            <div class="swiper-slide team-item " style="background-image: url('/guard-expert/assets/team2-wIlF6-PG.jpg');">
+              <div class="team-info-card">
+                <h4 class="team-name">Микола Пилипчук</h4>
+                <p class="team-position">Головний інженер</p>
+              </div>
+            </div>
+            <div class="swiper-slide team-item " style="background-image: url('/guard-expert/assets/team3-DP9PnwZz.jpg');">
+              <div class="team-info-card">
+                <h4 class="team-name">Анастасія Трубіна</h4>
+                <p class="team-position">Керівник економічного відділу</p>
+              </div>
+            </div>
+            <div class="swiper-slide team-item " style="background-image: url('/guard-expert/assets/team2-wIlF6-PG.jpg');">
+              <div class="team-info-card">
+                <h4 class="team-name">Віталій Готовський</h4>
+                <p class="team-position">Менеджер проєктів</p>
+              </div>
+            </div>
+          </div>
+            <div class="swiper-pagination"></div>
+  
+          <div class="swiper-button-prev swiper-btn-prev"></div>
+          <div class="swiper-button-next swiper-btn-next"></div>
+  
+          <div class="swiper-scrollbar"></div>
+  
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Partners section -->
+    <section id="partners" class="section">
+      <div class="partners-container">
+        <h2 class="section-title">Партнери</h2>
+         <div class="swiper swiper-four">
+          <div class=" swiper-wrapper partners-list">
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/guard-expert/assets/siemens-logo.svg-CQe1U10v.png"
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/guard-expert/assets/siemens-logo.svg-CQe1U10v.png"
+                      alt=""
+                      width="158"
+                      height="89"
+                    />
+                  </picture>
+              </div>
+              
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/guard-expert/assets/bosch-BpvMl05Y.png"
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/guard-expert/assets/bosch-BpvMl05Y.png"
+                      alt=""
+                      width="158"
+                      height="89"
+                    />
+                  </picture>
+              </div>
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/guard-expert/assets/vents-BCzLEs7U.png"
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/guard-expert/assets/vents-BCzLEs7U.png"
+                      alt=""
+                      width="158"
+                      height="89"
+                    />
+                  </picture>
+              </div>
+              
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+                <picture>
+                  <source
+                    srcset="/guard-expert/assets/UFP-DNPXCsyD.png"
+                    media="(min-width: 375px)"
+                    type="image/png"
+                  />
+                  <img
+                    class="partners-img"
+                    loading="lazy"
+                    src="/guard-expert/assets/UFP-DNPXCsyD.png"
+                    alt=""
+                    width="158"
+              height="89"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/guard-expert/assets/ab-metal-CE2L7HQ9.jpg"
+                      media="(min-width: 375px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/guard-expert/assets/ab-metal-CE2L7HQ9.jpg"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+              
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/guard-expert/assets/brand-BqNDMHCd.png"
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/guard-expert/assets/brand-BqNDMHCd.png"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/guard-expert/assets/ventservice-BOKyobSO.png"
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/guard-expert/assets/ventservice-BOKyobSO.png"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+              
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/guard-expert/assets/e-server-nDI0teTN.png"
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/guard-expert/assets/e-server-nDI0teTN.png"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/guard-expert/assets/vintana-BmWwHpxy.jpeg"
+                      media="(min-width: 375px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/guard-expert/assets/vintana-BmWwHpxy.jpeg"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+              
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/guard-expert/assets/senko-BFsnTlWs.png"
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/guard-expert/assets/senko-BFsnTlWs.png"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                  <picture>
+                    <source
+                      srcset="/guard-expert/assets/walraven-Drj6G2D3.png"
+                      media="(min-width: 375px)"
+                      type="image/png"
+                    />
+                    <img
+                      class="partners-img"
+                      loading="lazy"
+                      src="/guard-expert/assets/walraven-Drj6G2D3.png"
+                      alt=""
+                      width="158"
+                height="89"
+                    />
+                  </picture>
+              </div>
+            </div>
+            <div class="swiper-slide partners-item ">
+              <div class="partners-info-card">
+              
+                <picture>
+                  <source
+                    srcset="/guard-expert/assets/tiras-CG0XjPwE.png"
+                    media="(min-width: 375px)"
+                    type="image/png"
+                  />
+                  <img
+                    class="partners-img"
+                    loading="lazy"
+                    src="/guard-expert/assets/tiras-CG0XjPwE.png"
+                    alt=""
+                    width="158"
+              height="89"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+            <div class="swiper-pagination"></div>
+  
+          <div class="swiper-button-prev swiper-btn-prev"></div>
+          <div class="swiper-button-next swiper-btn-next"></div>
+  
+          <div class="swiper-scrollbar"></div>
+  
+        </div>
+      </div>
+    </section>
+    <!-- FAQ section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Поширені запитання (FAQ)</h2>
+        <div class="faq-item">
+          <button class="faq-question">
+            Що таке система протипожежного захисту і навіщо вона мені?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/guard-expert/assets/icons-MZki8_3w.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">Це набір обладнання, яке допомагає виявити пожежу на ранній стадії, попередити людей і (в деяких випадках) загасити вогонь. Це важливо, щоб зберегти життя, майно і уникнути штрафів.</p>
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <button class="faq-question">
+            Які етапи включає встановлення системи пожежної безпеки на об’єкті?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/guard-expert/assets/icons-MZki8_3w.svg#icon-arrow"></use>
+            </svg></span>
+          </button>
+          <div class="faq-answer">
+            <ul class="answer-list">
+              <li>- Виїзд на об’єкт для первинного огляду</li>
+              <li>- Розробка технічного завдання та проєкту</li>
+              <li>- Узгодження проєкту з вами та відповідними інстанціями</li>
+              <li>- Постачання обладнання</li>
+              <li>- Монтаж систем (датчики, оповіщувачі, проводка, шафи управління і т.д.)</li>
+              <li>- Налаштування, програмування та тестування</li>
+              <li>- Пусконалагоджувальні роботи</li>
+              <li>- Інструктаж персоналу</li>
+              <li>- Передача об’єкта на обслуговування (при необхідності)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Які об’єкти ви обслуговуєте?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/guard-expert/assets/icons-MZki8_3w.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">Ми працюємо як з комерційними, так і з житловими об'єктами: офіси, склади, торгові центри, заводи, лікарні, навчальні заклади, аграрні підприємства тощо.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Скільки часу триває монтаж системи?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/guard-expert/assets/icons-MZki8_3w.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">Тривалість залежить від складності проєкту, але ми завжди намагаємось дотримуватись оптимальних термінів і заздалегідь узгоджуємо строки виконання.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Чи обов’язково встановлювати систему протипожежного захисту?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/guard-expert/assets/icons-MZki8_3w.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">У більшості випадків — так. Закон вимагає, щоб у будівлях були системи пожежної безпеки. Особливо — у комерційних приміщеннях. Для більш точної відповіді для конкретного об’єкту необхідна додаткова консультація. 
+            </p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Як часто потрібно проводити техобслуговування після встановлення?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/guard-expert/assets/icons-MZki8_3w.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">Згідно з нормативами — щомісячний огляд, щоквартальні перевірки, щорічне технічне обслуговування з повною перевіркою всіх елементів. Деталі обслуговування мають бути прописані у регламенті, який затверджується на момент підписання угоди з обслуговуючою організацією.
+            </p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Хто відповідає за справність системи після монтажу?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/guard-expert/assets/icons-MZki8_3w.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">Якщо є договір обслуговування — обслуговуюча організація. Якщо ні — відповідальність лягає на власника об’єкта.
+            </p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Скільки коштує монтаж/проєктування систем?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/guard-expert/assets/icons-MZki8_3w.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text">Ціна залежить від розміру об’єкта і того, що саме необхідно у вашому конкретному випадку.
+            </p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Ви працюєте офіційно?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/guard-expert/assets/icons-MZki8_3w.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text"> Так, ми маємо ліцензію ДСНС України і досвід. Наші системи проходять обов'язкову перевірку.
+            </p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Яке обладнання ви встановлюєте?
+            <span class="faq-icon"><svg class="faq-svg" width="12" height="6">
+              <use href="/guard-expert/assets/icons-MZki8_3w.svg#icon-arrow"></use>
+            </svg></span> 
+          </button>
+          <div class="faq-answer">
+            <p class="answer-text"> Ми постачаємо та монтуємо усе необхідне обладнання, зазначене у проєкті. У випадку проєктування систем — усе залежить від ваших потреб. Ми співпрацюємо з перевіреними вітчизняними та іноземними постачальниками і можемо підібрати обладнання згідно ваших критеріїв та можливостей.
+            </p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <div class="feedback-contacts">
+    <!-- Feedback section -->
+    <section class="feedback-section">
+      <div class="container feedback-container">
+        <h4 class="feedback-title">Залишились питання?</h4>
+        <form class="feedback-form" action="#" method="post">
+          
+          <input type="email" id="email" name="email" placeholder="Електронна адреса" required>
+        
+          
+          <div class="phone-input-wrapper">
+            <span class="phone-prefix">+380</span>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Номер телефону"
+              maxlength="9"
+              required
+            />
+          </div>
+        
+        
+          <textarea id="message" name="message" rows="7" placeholder="Напишіть нам ..." required></textarea>
+        
+          <button type="submit">Надіслати повідомлення</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contacts section -->
+    <section class="contacts-section">
+      <div class="container contacts-container">
+        <h4 class="contacts-title">Наші контакти</h4>
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIhSURBVHgBtVHLaxNBGJ/H7mwe3U3SlGChL0qCWD1Yo4gKYhEEHxRExVtQ0IuKZ+vFix5yEQuCVwkKhQo+8JA/QPCBF0WlB4tYlFDXNLG77mYfM+N00zzoYsmlP3aYHb5vvt9jANgCwGBls4rYpebKy121UHMIIzcfzmgHT92i1p/gjKIxYrwtzyzdvljc2Cut7whMTEiaOrqHue4qTm8rLBUvHHZNa3mtqMS1gfSZq4+VvVPPEFL67XflN+vkrK1gx/xXnTveAMQYeDWdSVoKQYiCGmcU+GaNy8kMBIwBSEj9y7nxVLcCQFeqhHmN1hH5dT1k16tWmj9yBG60AHjwhSHYGY4lEO7TPCFaMEBVKAxlAHBclZlHOjeZ8AdBHRFFrj65N0kp7+fUHVmxvj/PnbhRDoVYeVSchgDSdkFNaL/nZ1+s1Xa9/OW4+k8TeF50UEsrZkO/FgQvaFoDWPro2SJ33LYipCZT7o+FV4PXZ1/b3z5ja+H9g8hQ7ghz7APxzPB99XRhznhaqnYsaJkc9xytnRhCnIztPsRdNwuRJNIHUd+sfxA2VrGaPIYNdlK0lVBnQIpASRYJk+YiEQhlGMNEMQCjXM1PXQG2FWO2VUFYhlBLLgZELcLE8fPjJDV6WVD9DTyJ90aSbMvDueW+7ftK1KhxoQoySml0bCf7NJ0h3QM2xdCduUtqNn+X+z7xaOPjYmFyP/jPs/eKnoh7wj94pclVbDqzwwAAAABJRU5ErkJggg=="
+              alt="Іконка"
+              width="16"
+              height="16"
+            />
+            <p><b>Графік роботи:</b> понеділок-п'ятниця 08:00 – 17:00</p>
+          </li>
+          <li class="contacts-item">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF4SURBVHgBzZFBSwJREMfn7bpLS4nEbpmUFCUSrZ0ixVPHDmUfoJOHCizq6NkghG6alyii6AMUhiRRRF9gL2YQSCyF2GHDLDEXXfe1mxYlRkt06A+PYd7wfm9m/gD/SYR2UF9wO9rIkdFH9ehwUKPJvMoMjCz2b15sgEGRjYgda0fXVSlrAYRIhrN7qiVpV85cFvUaGOgA1EcpDQShtY1RJSdW2Mm5E/0aDI6ACsL5Mt1tf8sp1kpLiX3f5w9+AuD8QSyrPBVOMag1ValCm5PnwOAiv8Bcxw/yUORM5g+zmF0IDUN9T4ZBJvB6Gc0NrEFe+Pg9ti5FPHrB5l+dN7vdbDOwFdlkmZo12wPRfPkmJZOdXW3IREu49MxSXC9RzAgrd8GZWANUQ992MjZNu0I7pbJ4VUME+W63ikgKA0MJGf+452PuFlJASFTSPisiOVuKaLcAxqpuKSKYDlK5FbfA8E409QTCE869lMjHc3hwPRmGXwg1xb/TK26Ge31+VZUvAAAAAElFTkSuQmCC"
+              alt="Іконка"
+              width="16"
+              height="16"
+            />
+            <div>
+              <p>+38 (067) 329-59-39</p>
+              <p>+38 (063) 675-25-46</p>
+            </div>
+          </li>
+          <li class="contacts-item">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH1SURBVHgBzVJPSBRRHP79ZmdnZ2bXnc3V3fnDbplLaraFUNJhsw517xhR1NFDhHnxFApFB7sEIXgolA7BdhARgi7dOmynDkZpYSi4bTvjshOjTru+ea/VWlu1kxH4wePBj+/73vc+fgAHCQj7ADbcLDHw+LJbWIqDj2d/ZTOC/rhRLDy6M73bAGLXhk4xwDX15t3PP768Z4jcjkSMeiC2n4CVmSeH3cW5qD0z/m5zztUJ6tXB1+HTl67kJ0YVQW9Hz3UIrazD1ll3SMBIQX7ioSK2dV9P9o+8quu2Dcjq2nd/i3Yv0psZLE6NhqWjab72KgHPI2IqzX+behqOnDk3EGgx7te4Tl3HN9ZByhYVovpwqOtCzMpOhmI3+lc354XnY2Glu+eBP6rdInaNoyZxT4JfHoxS5ECRA9M03avPXmzC2aHzApUSSVDoSwDfVhuNkj8JGKNcc5znFxf6lo0jFb0ZPinZjx845HwBRjq+zsPZSOt8RjjU+QYppXsSYJOs8ssLfUU1UdXQe+uulAhY5nFqFjtcs7ShHSM520qRankugyElvtsA8y/GE2Znl2IEg7lKdYOhJPMoyoCiBChJ/opTZfpJIeeQntal7HAb/F6B+heYPTli67IcLJSt29zOZrZh14JLqiaYz8ZK8I/Y19r/H/wEOPa6O1Rws4oAAAAASUVORK5CYII="
+              alt="Іконка"
+              width="16"
+              height="16"
+            />
+            <div class="emails">
+              <p><b>Email:</b> guardexpertt@gmail.com</p>
+              <p><b>Департамент продажів:</b> sales.guardexpertt@gmail.com</p>
+              <p>
+                <b>Департамент закупівель:</b> purchasing.guardexpert@gmail.com
+              </p>
+              <p><b>Юридичний департамент:</b> legal.guardexpert@gmail.com</p>
+              <p><b>Технічна підтримка:</b> support.guardexpert@gmail.com</p>
+            </div>
+          </li>
+          <li class="contacts-item">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIYSURBVHgBpVJNaBNBFH7zk2yyiRCjyapNqZtWCBqoByF4U/wDUS+23gQtUkGwijfB3oReBUGkYMGTiB6EHtIWD9Wb4KmQKtS6irGJG41VTDbJTmacJI1us1GUfjDwePO+b775eAAbBOrSw/Jw7fx4ipfKRwQWyKOG07mpGy/bd38TQNGrE3rk0MiCbWYDwNdmCQFPpKdspqcGC3euL8uO6CaAI5cm4tqJc0uVN68YYEKdyqLO6v5du4k596DfvHXtXdvJOgfJ6XzJeptREMYC+wKUbtayklpjRTPOq2UGgoOiJyuZk9FNzv82sX3k5j67sKIiQgn2qdS2SsOLQ329i0M7++1q+QxS/LThipkfglvOjqdcAsxaPcbr9WZNQ5phjB183HZoXD7wiIa3fWx+ReaCmXXYJSAEx7/TQF5wBS1q0AW/SASUOSTTbsD+ku/Rb88PQyttMSBr9tXUm2qYAPWHZjvUW9gz/elHxcgoGGFAikpJOGrI2lMr5mJQsRjndeTTk9XMKS3gctCoC8/vD3p3xKmQurxmgZ1/r1dzRkxUKyDkU97YADGfTu518lyLlJh8cRT8wRm2+pnLW9zKB7gntBXb1vfjy6P7Z8CxSLhDQLweTc3axfwYUYO4QZWTAgeC2P5WuCLJaeh8EboHyxNPsnfZinGxMaJqffcWTvdeWJsX8A9oOks8XHomz7yz9z8gf6jX4ScErsrA0hrsTQAAAABJRU5ErkJggg=="
+              alt="Іконка"
+              width="16"
+              height="16"
+            />
+            <div>
+              <p>ТОВ «Гардексперт»</p>
+              <p>
+                08132, Київська обл., Бучанський р-н, м. Вишневе, вул.
+                Європейська, будинок 27, офіс 5
+              </p>
+            </div>
+          </li>
+        </ul>
+        <picture class="contacts-map">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/guard-expert/assets/map-1x-desk-BMP492cY.png 1x, /guard-expert/assets/map-2x-desk-BnVSnIJU.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 834px)"
+            srcset="/guard-expert/assets/map-1x-tab-Blih9U-M.png 1x, /guard-expert/assets/map-2x-tab-CqGVuyoK.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 833px)"
+            srcset="/guard-expert/assets/map-1x-CWsE1szl.png 1x, /guard-expert/assets/map-2x-COtPYCGp.png 2x"
+            type="image/png"
+            width="287"
+            height="159"
+          />
+          <img src="/guard-expert/assets/map-1x-desk-BMP492cY.png" alt="Map" />
+        </picture>
+      </div>
+    </section>
+  </div>
+  </main>
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-block">
+        <div class="footer-info">
+          <a
+            class="menu-social-item"
+            target="_self"
+            rel="noopener"
+            href="./index.html"
+          >
+            <picture>
+              <source
+                media="(min-width: 834px)"
+                srcset="/guard-expert/assets/logo-footer-desk-DyyUWoDN.png 1x, /guard-expert/assets/logo-footer-desk-2x-BXw1f-Rf.png 2x"
+                type="image/png"
+              />
+              <source
+                media="(max-width: 833px)"
+                srcset="data:image/png;base64,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 1x, /guard-expert/assets/logo-footer-2x-Dr7hpfDf.png 2x"
+                type="image/png"
+              />
+              <img
+                class="logo-header"
+                src="/guard-expert/assets/logo-footer-desk-DyyUWoDN.png"
+                alt="Logo"
+              />
+            </picture>
+          </a>
+          <ul class="footer-list">
+            <li class="">
+              <a class="" href="#about">Про нас</a>
+            </li>
+            <li class="">
+              <a class="" href="#services">Послуги</a>
+            </li>
+            <li class="">
+              <a class="" href="#projects">Проєкти</a>
+            </li>
+            <li class="">
+              <a class="" href="#choose-us">Чому ми?</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li class="">
+              <a class="" href="#team">Команда</a>
+            </li>
+            <li class="">
+              <a class="" href="#partners">Партнери</a>
+            </li>
+            <li class="">
+              <a class="" href="#faq">FAQ</a>
+            </li>
+          </ul>
+          <div class="socials-column">
+          <div class="list-socials">
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/llc-guardexpert-439436332"
+            >
+            <picture>
+              <source
+                srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK7SURBVHgBvVXNixJhGH/nQx1jN6xoN/aw0MLC4lbLptSpukiGdg/0JHQIunkI+guEPXgVDx5MQeguuOAl6JhXPeRB8OBXUYL4MaMz/R6ZmdxxDjtiPTDzzDvP+3x/MfaPgVs9+P1+t9frvaeq6pxtALPZTAR/p1arKWvEQqFwBsEDWZaV6XQqzxwC+AgpmqZ1crncGbNaDkIXCoC05WtDUHUZfZJJsvnli+f3YcEdjuM0HDWLcwt2feBIhqIotyjUpgKXy7UAQaUL8/mc8kI5+Iqni7MArDpRonsyNxUQ4OcSi6LINZvNd1D4LJPJ+HH+sXrPKdgyQtltwh6Px8ssleYUROuPyWQyOz4+voCSDzj6UFGiJEnaqiKETSNPVwzS4DFjNsasKUByPNVq9bLVag0EQVDi8fibdrvdL5fLnyFHDofDb4+OjvZhSInCh/w9h/AzXalmp4Sdn58fUBEbtRaNRh8YtMFg0K1UKnnjnE6nX2Sz2aer/KPR6CPxoRKX/CSLZBLNNgc+n+9A/+ThhQArb+pnKZlMfoGH3+CZ8Y/t7OykxuPxJe6tyXJaHdNEInG3VCp9LxaLPTyvDUKj0fhkx+C4/EKh0Hs4dR+RkJCPC1MQz/e2oqDX690gTFUzHA6pSKgRWSqV4reiAGBOSnQrjZFlh1KlbkuBLSBs7NoKUG59/ZNmiorhNTFoqP/f7C9RZvqcQmX+tJO12mimi6jhV2DgMCoklJ60t7d3GIlEHsJK9eTk5LFxb3d31xeLxZ5Q9weDwZemIM4SLczuQ1o0NAVlo1t0gPUL69CnhTSn1rWAvnBUwoFA4NAM0enpaReW/qJEAV8ZH2j/tTDCM5dgE3S32y2QDGCawJ0rRFpztO7IE9qAM4dAK1OPQi+fzz9ai7seKjdtN1pAbAMAr4h8dOv1usz+F/wBCoc0gXwu2VQAAAAASUVORK5CYII= 1x, data:image/png;base64,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 2x"
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="benefits-img"
+                loading="lazy"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK7SURBVHgBvVXNixJhGH/nQx1jN6xoN/aw0MLC4lbLptSpukiGdg/0JHQIunkI+guEPXgVDx5MQeguuOAl6JhXPeRB8OBXUYL4MaMz/R6ZmdxxDjtiPTDzzDvP+3x/MfaPgVs9+P1+t9frvaeq6pxtALPZTAR/p1arKWvEQqFwBsEDWZaV6XQqzxwC+AgpmqZ1crncGbNaDkIXCoC05WtDUHUZfZJJsvnli+f3YcEdjuM0HDWLcwt2feBIhqIotyjUpgKXy7UAQaUL8/mc8kI5+Iqni7MArDpRonsyNxUQ4OcSi6LINZvNd1D4LJPJ+HH+sXrPKdgyQtltwh6Px8ssleYUROuPyWQyOz4+voCSDzj6UFGiJEnaqiKETSNPVwzS4DFjNsasKUByPNVq9bLVag0EQVDi8fibdrvdL5fLnyFHDofDb4+OjvZhSInCh/w9h/AzXalmp4Sdn58fUBEbtRaNRh8YtMFg0K1UKnnjnE6nX2Sz2aer/KPR6CPxoRKX/CSLZBLNNgc+n+9A/+ThhQArb+pnKZlMfoGH3+CZ8Y/t7OykxuPxJe6tyXJaHdNEInG3VCp9LxaLPTyvDUKj0fhkx+C4/EKh0Hs4dR+RkJCPC1MQz/e2oqDX690gTFUzHA6pSKgRWSqV4reiAGBOSnQrjZFlh1KlbkuBLSBs7NoKUG59/ZNmiorhNTFoqP/f7C9RZvqcQmX+tJO12mimi6jhV2DgMCoklJ60t7d3GIlEHsJK9eTk5LFxb3d31xeLxZ5Q9weDwZemIM4SLczuQ1o0NAVlo1t0gPUL69CnhTSn1rWAvnBUwoFA4NAM0enpaReW/qJEAV8ZH2j/tTDCM5dgE3S32y2QDGCawJ0rRFpztO7IE9qAM4dAK1OPQi+fzz9ai7seKjdtN1pAbAMAr4h8dOv1usz+F/wBCoc0gXwu2VQAAAAASUVORK5CYII="
+                alt="photo desc"
+                width="120"
+                height="120"
+              />
+            </picture>
+            </a>
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://wa.me/+380673295939"
+            >
+            <picture>
+              <source
+                srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHaSURBVHgBjVLLSkJRFL0PzEZiM0eCVBoY6DCb5qiJfyBEgxwq6syBFTht1i8k2NiJM38gBUvLi4ngE69giHifp73lHPFxjTbo2fectV9rL5GzMEIIP5vNztxu90UwGPRGIhFSLpcn3H+s0+mkIMGU7Jrc7XZTf8XyAGqYpkl0XTfRWCT6mqax7zpirdquAwgBGgUaGLvVhUYxjY3gfr+fpK8qVP8ZDAa3hmFoUNiwGAXvCYyaXK8+gcAluFAoXOIdzPtM9hiOSHnihXQ6fQr4I1EUl3ONx2MJz3a7/bqPLMDi4YjH416h1+v5GIn4FwqF7uj5oigKAddcp2odOxwOTwQkir3C3EYgEHgolUruWCzmt9vtHPAiwJMOvxkGIk8MLwgCEVwul8SyQ2uiqqokHA63otGo4vf7DyHne7FYvOZ53gEVn2w22wHrBIT2xWWzWexiAkC2MgOSLP1qtXq1Pns+nz+nJCLh8uqhVqvFt4g2F4uFjs58Pv+WJCkzGo0eMVZBYsBg1YlVAlmWb6zWRdW4EhN0qVIhfWysBS6c8PjG1AstMiWuclF5o//J7ZGyE9pNVCqVe/B7Fg1NQX2J7bjdTNQymcxxq9XyQVXe4/E0c7lcEzZBtnG/zI8ea6gDV9gAAAAASUVORK5CYII= 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPZSURBVHgB1VffS1NRHL/7QcZAKGc9JNkWPfkQ0lLMioJeJKOnVKIegkBfhAhEQ3rwSRPWQz2vH2ZiGinki3+AgksdPYhOdA5Utlr74Y8pg2339vnOc8Zl3nvd3YToA2dn9+x7Pufz/Z7v2fdcQfjHMOgx7u3tPdPS0lIbDAZrU6mUXRTFsgyJwRAzmUxrFRUV7vHx8R8dHR1h4TixsLBQI0nSABbcQi9K2ohA3IDX670qFAt4bAXhEFoapHwBVQEQmOmZLT0M9vT0nBUKwf7+/g0Q/CbSdDot6YRIc5igEHHpWnx7e7vxwJEUkRwVckkjImIymaSvyZ2dnXt5Lc48TzKvdbuugDTjSkGEdiQoy2EYlO2hvC8GPBIhyitVATAYZBHPes4mEsJoEeZSIaLSjPuz4uLLy8t01MSchMvMCIfD7/x+/8nJycky5IdXKhB8K5aWlhyHBODHgZzQZ5BIJH5WVVWd4HahUOgp86SQKIi0Btb6qLT3UaUZsVjsmdx2dHS0DMMBqQjAgZjT6SzPkvp8vkY1Y2TufYVoOaXCQZETsaUNxGWkj42NjVpBBQjZOfnz3NycxWg03hYKB9Ufw/r6el1WABRdVLO2WCyPm5qaTPzZbre7YE9JJApFABx2uYDTanYlJSXXu7q67vCBvb09D6ofbYOuSqogoCwrAEir2BlgKDgcDld/f38pDVRWVjpxFL+i/BqQTBkuzikjF/JFRgD2dEvDhpLmfGdn5xf0Ga9HRkYeofuGeZQjNJaCGOp9sJlnEcrqUSKFTVQuwKe2OgyNaJS9d/H4lsba2tqSGGva3d19YTab41jcDI7Q2NjYTfQ1KysrDxChWRYJNQH+7AMdCX48NI4OL69v5EQul+tCPB5/PTExcY1z89+QLy/VzuLq6mpDlgSXhnKQR6Qjzi8JYCK+w1ulomKQ98iVhypckUNFif4eZbceVRFcCPBrc3PzSWtrq0VBCDllgQBP7nxaA+3DoQkzMzOXYZCQ8kDOJWXN7Xa/GhoackxNTZVS83g8tzA+n2vLipGoWIyg+AR+1FvpRFm5JvF/WEspRJOX40/ydc38i9VqrUBnF/TBgFPAv5ewlgFOgdyOvDdiLNDX1/dckQnKLFDol44f/I6RxHWvXtACjGxofumYQPvPtiIZjUbzu5TCuFpFhK4LSM61vF7QA0yyQbmfcdHbUIInldYtPefFhD4GNC+hR4iw4JzXtbe326enp6tB+l46uJhqgRRE6ZwvLi5eyWcdvS+n1ubm5ppAIFADby9h6BR6E/7/6V/Ub7PZZoaHh2e7u7sjwv+Cv7ez4Sm84iSmAAAAAElFTkSuQmCC 2x"
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="social-img"
+                loading="lazy"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHaSURBVHgBjVLLSkJRFL0PzEZiM0eCVBoY6DCb5qiJfyBEgxwq6syBFTht1i8k2NiJM38gBUvLi4ngE69giHifp73lHPFxjTbo2fectV9rL5GzMEIIP5vNztxu90UwGPRGIhFSLpcn3H+s0+mkIMGU7Jrc7XZTf8XyAGqYpkl0XTfRWCT6mqax7zpirdquAwgBGgUaGLvVhUYxjY3gfr+fpK8qVP8ZDAa3hmFoUNiwGAXvCYyaXK8+gcAluFAoXOIdzPtM9hiOSHnihXQ6fQr4I1EUl3ONx2MJz3a7/bqPLMDi4YjH416h1+v5GIn4FwqF7uj5oigKAddcp2odOxwOTwQkir3C3EYgEHgolUruWCzmt9vtHPAiwJMOvxkGIk8MLwgCEVwul8SyQ2uiqqokHA63otGo4vf7DyHne7FYvOZ53gEVn2w22wHrBIT2xWWzWexiAkC2MgOSLP1qtXq1Pns+nz+nJCLh8uqhVqvFt4g2F4uFjs58Pv+WJCkzGo0eMVZBYsBg1YlVAlmWb6zWRdW4EhN0qVIhfWysBS6c8PjG1AstMiWuclF5o//J7ZGyE9pNVCqVe/B7Fg1NQX2J7bjdTNQymcxxq9XyQVXe4/E0c7lcEzZBtnG/zI8ea6gDV9gAAAAASUVORK5CYII="
+                alt="photo desc"
+                width="24"
+                height="24"
+              />
+            </picture>
+            </a>
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="viber://chat?number=+380673295939"
+            >
+            <picture>
+              <source
+                srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJUSURBVHgBhVPPixJxFJ9xR1dBYZPdFkPqsHgJglBhj2sQiJ31UOFf0MmbYAehQ1i0hZDsyT1piF49eBOEyPwVGAUqIrr+LCz8gaMzzrf3xpnBapd98OZ9v+/73uf73ufNd4e6Qmw2mxqM1mAwqO12O2m1WgJ1nYTD4d1yufxyuVx+Xa1W09VGlqC/wPc9l8u9C4VChkuTq9XqESGEEwSBoK7Xa45sRMAP7Iks+Xze/leyw+FgMHk6neI5CzpDkG63+z6RSDzKZrNeALhAEJZlEZj3+Xw6zFXhx+/3PwHD6PV6PhAI3Ekmkwc0TS+NRuNDhmH2LBbLEIDuQ2JfrVZjzo7T6XyqVNBoNF7jjSBdyUWn02k7OgqFgjsej590Oh0XVPJY7Alia7XauVLBZDK5Czfi8lYsFnsAlrhcrlOO4yir1ZqECvYrlcreaDT6CWc8xkK7t5UKSqXSR0TmeV6APn+gb7FYDAFAAEVOCEyh3m63T2Uii8ViTqkAEGfiRqUioPsQeK7T6Q6h/xno7nw+/6DRaI7MZrMPLmCl2IlSQb1efyuPCQePtt/vv8KzaDR6ghZ4OAT3hTzmZrP5RgEAwo6lWfPbIFB2yev13pTjhsNhSCKbZDIZm+wX2YNeP8k8bIgWOFiLwYPB4Azmf4ZriMOLvlD/iAgCLCcxGQpYQwJP/hcBqsqApeUcegsECRXgJ3rudrtfoCOVSj2DtzHVarWsyWTq9nq9b8Fg8LeURzCG2QIQX9t4PD5ACw/n2OPxfKYuF0JdJZFI5AaQek/aMtQ18gcFFtri1Li/AwAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVDSURBVHgBxVd7SGRVGL/zHkUXlHxg7kSutqmRf2jRJpX132JBUZQgrangWpBaoCX4xP6QkIbcpHxgagRhUeiCFhr6h0qpzaoZ+VpNZ9jG9zg6Ojp6b78ze67dufeOs7PR7geXc+Y73+P3fd853znDMPeZFIyfFBsbq4uMjAzc2trSqUEqlYoF26VUKo92dnacCwsLh/7Y8wmgqqpKrdVqk7Ozs5+F44Sjo6PHOI6LVigUQRi1EDnB3MmyrANzCwAt2my235ubm3/d2Nj4xWg0HjB3QzCuGBsby4DhG5i78HGYc77o5OTkdH58fHwT9MHAwIDeL+dTU1Mh0O+XM3qnJNKZGxoauuiP8zkfTk+8ZUOGz1KeDZmI9QkAgteJAgXA0s/DIB2tu7u772IzvoSav768vFyPlK+RBZfLJZRzI6D2TGlpaWqvzqenp58XOoISb+QPfP3sbeLXTa2trQmZmZkvFhUVXc7JyYkaHx/XWCyWj9wp+jcAD+ATExOveAWADfOVUJg429zc/LSxsVFD1mG0hBrngXx3cHDw3Nra2huI2ojvk7y8PM36+no6UaeZ8CD4+F7WeWdnpwrrf4pqeEOmRM28zN7eXntJScnL+fn5GV1dXcFWq/UFrF0naYajKrFzqnezp6dHJwFQX18fhsW/RTo/iOUqKyvPgb/CC6Dub83Pz7+G8SdsskdnZ2efwfwzzNXI1C1OSo66uroE3p6Sn+zv70dhOCfy9xQaUJjgt6K6utqOsY3+Pp6ZmbnQ0NBgqqmpyU1NTb22vb09CSfO3t7eSADrYKSkt9vt5+UAGDAEioQjS0tLX+Wdkwqsrq5ewHiFMBChKjExsQzdbo50RpPJZOzu7s7AiehHa04NDg7+WQYAlpQREgBAHSaWBI+Ji4t7D+2YdDJuaWlJHx4e3gfHD+E3i7bLt3JVenr6O0lJSYfQUURERJhxRLU6nW5HBgCDEgVIACCCALEgeByGR7KysvLJ78HBQbczkIcuOXIpKSlX9Xr9j8XFxalBQUEF8fHxJCsGRj4FWgmzvLy8QGbD8E3FgVo/TOQWFxevCPis8NjyfYP2gGGy4+U6ZllZ2duSDICccmhx4xILgbiGv0lOTtbExMR04Ph9DT6JnJSAFUTGl4TwnsYXgyywjDSzDgkAMDcZeSIyHNL+JC6ULwkDm+tNh8NhBI8E5LaBdlxAGhAiniC7jOwfosd4Bukm6NkkAAICAlYwHMkhADgFSStqnOl0Oj8nhlHn90dGRtKw1N3X15cXEhJyDRu0Jzc39xLW68FnAEbuveHUaDQWCReNgzwwLGfdgnyNsYu/xXETH1kFI3jgQOwqJ7rIqG0z6ZpygTJIazfng+CcvwdmzGbz4yIAp1klACGzKdaHD4/u6lEfvOnaKHqO8ULk7JPjiWguRkdH/4baf9zS0hLK3K43IfemQ0nI0Q0VZMS9juu7w5ttUgY1opuUuUrlyJ0Jmg0rOmQlUhtFSokjWkmSJbgNWfrGmMGlp2XOotHR0UQo7FPjvh+BKK3AkY1PO1V1R0IDcg0PD18SlUtCClqKJ6BgdmuJXjd+0OmbggBD7S/7cu4BAv0/FJfKh1CeFifiTjJDRcgT7Qu8tAzenPtEU1hYGFFbW/sXegD/tCaWldiIdvwJseBMH2K+j97jxLiBdSt4JHuTFRUVE01NTRtUj2x4lvGXDAZDCFqvnY+cRraM9+B5GoCaGlcy/weh/z+A+u0KnN9qb29/kC77/dfurgDwGQCt4C9X9D1zTog8MNH92uB8SeD83tOZfyj+A/0Dn7dY0RO9sbgAAAAASUVORK5CYII= 2x"
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="social-img"
+                loading="lazy"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJUSURBVHgBhVPPixJxFJ9xR1dBYZPdFkPqsHgJglBhj2sQiJ31UOFf0MmbYAehQ1i0hZDsyT1piF49eBOEyPwVGAUqIrr+LCz8gaMzzrf3xpnBapd98OZ9v+/73uf73ufNd4e6Qmw2mxqM1mAwqO12O2m1WgJ1nYTD4d1yufxyuVx+Xa1W09VGlqC/wPc9l8u9C4VChkuTq9XqESGEEwSBoK7Xa45sRMAP7Iks+Xze/leyw+FgMHk6neI5CzpDkG63+z6RSDzKZrNeALhAEJZlEZj3+Xw6zFXhx+/3PwHD6PV6PhAI3Ekmkwc0TS+NRuNDhmH2LBbLEIDuQ2JfrVZjzo7T6XyqVNBoNF7jjSBdyUWn02k7OgqFgjsej590Oh0XVPJY7Alia7XauVLBZDK5Czfi8lYsFnsAlrhcrlOO4yir1ZqECvYrlcreaDT6CWc8xkK7t5UKSqXSR0TmeV6APn+gb7FYDAFAAEVOCEyh3m63T2Uii8ViTqkAEGfiRqUioPsQeK7T6Q6h/xno7nw+/6DRaI7MZrMPLmCl2IlSQb1efyuPCQePtt/vv8KzaDR6ghZ4OAT3hTzmZrP5RgEAwo6lWfPbIFB2yev13pTjhsNhSCKbZDIZm+wX2YNeP8k8bIgWOFiLwYPB4Azmf4ZriMOLvlD/iAgCLCcxGQpYQwJP/hcBqsqApeUcegsECRXgJ3rudrtfoCOVSj2DtzHVarWsyWTq9nq9b8Fg8LeURzCG2QIQX9t4PD5ACw/n2OPxfKYuF0JdJZFI5AaQek/aMtQ18gcFFtri1Li/AwAAAABJRU5ErkJggg=="
+                alt="photo desc"
+                width="24"
+                height="24"
+              />
+            </picture>
+            </a>
+          </div>
+        
+          <div class="list-socials">
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/guardexpert_official"
+            >
+            <picture>
+              <source
+                srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALNSURBVHgBxVXNblJBFJ77A5jgpgnaCpquuuhK7cKa6E6Npm7lCdqkMW2TPkLfgBCiBEh4BhfaaGyCGg1doFtYkAAREIhh0/LPveN3rnPxci8g1IUnuTCZmfOd78z55gxj/8kktrhJ80xK4tOj0ejVXC53h3N+WZIkbZIz1hS32322trb2bXd39wemZJoW38RgUiaTcXU6nU98QYNPOpVKqRaSDpOPjo5U7G0Nh0PyGc6JrZNpmkbjNhEUmTjYM2IhNupzgvN+v897vd5r+LWJGGVvxRxZJBLxCx87c20wGDgCijn6zsgfQd5QJrQWi8V8Jq5qDvL5/IYYKuYc9lMwFVaB03O/358GS7nZbG5ub2+/BOvryOAS9pwjoBdi0Il5Npu9j/9XYwFgXuYQCVfB7MTr9T4KBoPu5eXlJwDhtVrteGdn50ar1XoPFT0kUi6Xy6gj/YCEx5EB2OhWdDBicCoTeLFYvL26upphf4rHK5XKBq2BRBl7AyLAb1BVHcnaUW3T4CAlEok9MFcA/hUgI21TYQOBQIaywtHtWcHtprIZ5vP5TldWVrYwlAAyIoNjMcZYe4y6fJmFIc9aRKr6lCUjG1mWqU4Ku2iAarV6DwV9h6FOshTA3ByHw+HjRqNxl81j+/v7wQk6L9NaoVC4xccvn1Yul28aqWAP1cRqh4eHz0zcUQ0URRnLBsfDoawApEgyJSmqBwcHT2kN0n0bj8cHuLUnuCukIMpsdHMhU8URAPo+tyUlY27o8XgegNT3ZDK5t7S0dEp1qdfrW1DPCyJAeMwmFuzpMbsB4IroXIu0Cs02bfiGQqFrdnyz2X0UnXTuZmcxo6O22+20FXPsSJC2CxtbtJE68ALglCX9t6nlsynqNB4K2kBtmy9o3W73g3gLxh6cqU8mnWOpVNoUjWvihSPlQQi99fX1z3gyf7K/PJn2QIvaRXz+3X4B0644UGkPnb8AAAAASUVORK5CYII= 1x, data:image/png;base64,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 2x"
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="social-img"
+                loading="lazy"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALNSURBVHgBxVXNblJBFJ77A5jgpgnaCpquuuhK7cKa6E6Npm7lCdqkMW2TPkLfgBCiBEh4BhfaaGyCGg1doFtYkAAREIhh0/LPveN3rnPxci8g1IUnuTCZmfOd78z55gxj/8kktrhJ80xK4tOj0ejVXC53h3N+WZIkbZIz1hS32322trb2bXd39wemZJoW38RgUiaTcXU6nU98QYNPOpVKqRaSDpOPjo5U7G0Nh0PyGc6JrZNpmkbjNhEUmTjYM2IhNupzgvN+v897vd5r+LWJGGVvxRxZJBLxCx87c20wGDgCijn6zsgfQd5QJrQWi8V8Jq5qDvL5/IYYKuYc9lMwFVaB03O/358GS7nZbG5ub2+/BOvryOAS9pwjoBdi0Il5Npu9j/9XYwFgXuYQCVfB7MTr9T4KBoPu5eXlJwDhtVrteGdn50ar1XoPFT0kUi6Xy6gj/YCEx5EB2OhWdDBicCoTeLFYvL26upphf4rHK5XKBq2BRBl7AyLAb1BVHcnaUW3T4CAlEok9MFcA/hUgI21TYQOBQIaywtHtWcHtprIZ5vP5TldWVrYwlAAyIoNjMcZYe4y6fJmFIc9aRKr6lCUjG1mWqU4Ku2iAarV6DwV9h6FOshTA3ByHw+HjRqNxl81j+/v7wQk6L9NaoVC4xccvn1Yul28aqWAP1cRqh4eHz0zcUQ0URRnLBsfDoawApEgyJSmqBwcHT2kN0n0bj8cHuLUnuCukIMpsdHMhU8URAPo+tyUlY27o8XgegNT3ZDK5t7S0dEp1qdfrW1DPCyJAeMwmFuzpMbsB4IroXIu0Cs02bfiGQqFrdnyz2X0UnXTuZmcxo6O22+20FXPsSJC2CxtbtJE68ALglCX9t6nlsynqNB4K2kBtmy9o3W73g3gLxh6cqU8mnWOpVNoUjWvihSPlQQi99fX1z3gyf7K/PJn2QIvaRXz+3X4B0644UGkPnb8AAAAASUVORK5CYII="
+                alt="photo desc"
+                width="24"
+                height="24"
+              />
+            </picture>
+            </a>
+            <a
+              class=""
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/llc-guardexpert-439436332"
+            >
+            <picture>
+              <source
+                srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHPSURBVHgBjVO9TsJQFL4tVRNikcSYiBASSIX4AOyNi0/hQHwELOngwMAAT+AzGMIL1FEWRybsj5HwaxgwpCGoLa3n4L2mUjCepfec+333/H3lyAarVCq8bdu5wWAgCYJAMpmMXq1WTfIf6/f7iu/7Mz9s0/F4rPzF5QBkeJ7nu67roTEmnh3HYf4TYkNsvAAQAhx/uzkUY/wiD4dDhQHWCN4SLBgA9x2L63a718HsUyg7CFxiG/S8MAzjtl6vi5PJ5A4D9A7nxBFFUU5ZNiTSEtFeNU27xH4lSdrDRKPR6CGA9cvlcp6HYJ5VAqW58/lcazQaMsdxx+12uwWxx0KhIOJ9IpHIgk/YEHu9niRgi2wLsPtWPB6/QMc0TTWbzd7kcrlDy7I+ZVneh/ARz/M/raNGhGQy+Uyzf8RisXM6qFkkEjmAKjiWrVgsnsBnh40N46lUSudFUcSV2MDb/cYTgmR4BIf70mw200iAAZ6xzLTqt1qtZq0CuBKqGycgHpdtAmZxBbK+pxtdYUCVpXUh6ZuEBDGXneHBBcV0yBYpdygJUwV14VF541knm6TMDEtDYflhm0GrpVDWbQ+pqioBYaWRdDptRaNRE35zbx33BRV1IbP9wQU8AAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPzSURBVHgB1VdPSBRRGJ/RLMgsNBPBTISgAjNKVEjzEHSQFBQ0unjwsEZ3T55WCC+KByEMPOj6X0iUCL2I/06KgoF/yIupSGtu69aurujuzPT7pjfb293Z0ZmE6Aez772Z733/v/e+FYR/DNEMsd1uT6upqcl3Op0FwWAwW5blFJWJKHri4+M3MjIy5oeGhhYaGhpcwnliZWWlQFGUbgj8iVFWjOGWJKl7fX29QPhbNDU1XQfDATwSLNYExFQACqojR9vf3NycJliBz+crAYM9YgqLFJOQaQ9TaI94mRLu9XrLNatlzSwLoL2BQICmgcPDw/IzCT86OiLLA8xq06brQGK8guD9xFA4Yn4DhN9YDC1brgPNE3uUVzEVAMEA8/h5WB4JifHu0xW+urpaqFJJ1mTrpUpk/mihWFpayo9SAG7vsep6ruyc29vbLcj6HCTdGx1SmWjpnAgTTiccPu4rJqB5ilm5sLOz86qtre2qxnN4eLiIdIux3UP5FlJgc3PzuXI2yEwoDX6PxzOyu7v7FAbEcfao8/b29tcGPGTILA0RY2F0bNImbS7C8i089rGxsXvJycmV6enpk0lJSRnT09O2vLy8BNDIRFhRUXE7Bj+6f8Stra3C0JupqameKDVZ/nDnwSwS9UVdXd1lntvg4GApvm1MTEy8jND6PSs9XUBhR4h4cnLyo54CSBjfycnJO1xG+XgVdnNWV1dfPD4+7iTSjo6OZ5x1ApRMwPs5xQAw+gPRXlB3iaIS5SdRPF5bW3uQm5u7EeE+BSF7lJWVNYJ5eldX12ObzTanfSMiVME1DDcFY6jKasnzQ4cgAfF9i5q1ORyOW1hfQrJdc7lcjRC+iHVqZ2fnw9ra2jDhhMTERMrwG4KRdFHcDy1mZ2cbI12E2PPnAYzyLWPc09Yoo7u8JTygZJlyCmZmZuxEq4aAOhnOgt+uiYtTR9CStleAHE7GSUlJiZfNo8IH5e8LpwAy51Q59ENtFAR59ayB8KjNoE0pKir6hFKq5km1ycHBQa5gjP3R0dHFsDcmj2KJK7H+1tbWFE6JOLfbvRxjn3oU43FEqcT6PsnEZUSnsMzod9HEVBKf8fHxO1j79S4nRitTWev6hayxcB2HvAHXT+H5HKOJ0q7jXiEWUGapIHBZuRV5oTptnMx4OkmGYAS/30+3mNaSnUdXpIUpgDAVC2cBCKmOA8y1lrsj8gSzPIj+oEwwA3iiGBu/cm25KW9wbbmbeAlWwHKiT/kTQ8WoS4/4Y0Ja94Y1HlZBZQOLHMrpXRNp4IEC3TFLLQKm/py2tLSkVlVV5bNmIhtKqS02jm03BH/JzMycxwm3UF9f/134X/AL1+9zHI85s1wAAAAASUVORK5CYII= 2x"
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+              <img
+                class="social-img"
+                loading="lazy"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHPSURBVHgBjVO9TsJQFL4tVRNikcSYiBASSIX4AOyNi0/hQHwELOngwMAAT+AzGMIL1FEWRybsj5HwaxgwpCGoLa3n4L2mUjCepfec+333/H3lyAarVCq8bdu5wWAgCYJAMpmMXq1WTfIf6/f7iu/7Mz9s0/F4rPzF5QBkeJ7nu67roTEmnh3HYf4TYkNsvAAQAhx/uzkUY/wiD4dDhQHWCN4SLBgA9x2L63a718HsUyg7CFxiG/S8MAzjtl6vi5PJ5A4D9A7nxBFFUU5ZNiTSEtFeNU27xH4lSdrDRKPR6CGA9cvlcp6HYJ5VAqW58/lcazQaMsdxx+12uwWxx0KhIOJ9IpHIgk/YEHu9niRgi2wLsPtWPB6/QMc0TTWbzd7kcrlDy7I+ZVneh/ARz/M/raNGhGQy+Uyzf8RisXM6qFkkEjmAKjiWrVgsnsBnh40N46lUSudFUcSV2MDb/cYTgmR4BIf70mw200iAAZ6xzLTqt1qtZq0CuBKqGycgHpdtAmZxBbK+pxtdYUCVpXUh6ZuEBDGXneHBBcV0yBYpdygJUwV14VF541knm6TMDEtDYflhm0GrpVDWbQ+pqioBYaWRdDptRaNRE35zbx33BRV1IbP9wQU8AAAAAElFTkSuQmCC"
+                alt="photo desc"
+                width="24"
+                height="24"
+              />
+            </picture>
+            </a>
+          </div>
+        </div>
+        </div>
+        <button class="footer-button">Консультація експерта</button>
+      </div>
+        <p class="copyright">© 2025 Guard Expert. Усі права захищено</p>
+      </div>
+    
+  </footer>
+    <!-- Modal section -->
+
+  </body>
+</html>
