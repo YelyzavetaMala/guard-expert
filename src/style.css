@@ -174,26 +174,6 @@ body::-webkit-scrollbar-track {
   }
 }
 
-.container-header {
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 24px;
-
-  @media (360px<=width) {
-    max-width: var(--mobile);
-  }
-
-  @media (834px<=width) {
-    max-width: var(--tablet);
-    padding: 0 16px;
-  }
-
-  @media (1440px<=width) {
-    max-width: var(--desktop);
-    padding: 0 8px;
-  }
-}
-
 .section-title {
   margin-bottom: 40px;
   font-weight: 600;
@@ -234,11 +214,13 @@ body::-webkit-scrollbar-track {
 
 .header-hero {
   background-image: url("./img/header-hero-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  border-radius: 0 0 8px 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+
   @media (834px<=width) {
+    padding: 16px;
     background-image: url("./img/header-hero-background-tab.jpg");
   }
 
@@ -254,8 +236,9 @@ body::-webkit-scrollbar-track {
   width: 70px;
   height: 48px;
   @media screen and (min-width: 834px) {
-    width: 70px;
-    height: 36px;
+    width: 82px;
+    height: 38px;
+    margin: 10px 0;
   }
   @media screen and (min-width: 1440px) {
     object-fit: contain;
@@ -268,61 +251,25 @@ body::-webkit-scrollbar-track {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (min-width: 834px) {
+  }
 }
 
 .header {
   background-color: #ffffffe5;
   padding: 16px 0;
   @media screen and (min-width: 834px) {
-    margin: 16px 16px;
-    padding: 20px 0;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.85); /* напівпрозорий білий */
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   }
-}
-
-.menu-nav-header {
-  display: none;
-  @media screen and (min-width: 834px) {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: var(--accent-color);
-    align-items: center;
-  }
-  @media screen and (min-width: 1440px) {
-    gap: 16px;
-    font-size: 20px;
-  }
-}
-
-.menu-item-header {
-  transition: transform 250ms ease-in-out;
-  width: 75px;
-}
-
-.menu-item-header:hover {
-  width: 20px;
-  @media screen and (min-width: 1440px) {
-    width: 32px;
-  }
-}
-
-.menu-link-header {
-  padding: 0 12px;
 }
 
 .header-menu {
   max-width: 32px;
   max-height: 32px;
   fill: var(--accent-color);
-}
-
-.menu-svg {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .menu-button {
@@ -339,6 +286,33 @@ body::-webkit-scrollbar-track {
   }
 }
 
+.menu-nav-header {
+  display: none;
+  @media screen and (min-width: 834px) {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 24px;
+    margin-right: 14px;
+  }
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.menu-item-header:hover {
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.menu-link-header {
+  @media screen and (min-width: 834px) {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent-color);
+    padding: 0 6px;
+  }
+}
+
 /* Hero section */
 .hero-container {
   @media screen and (min-width: 834px) {
@@ -346,6 +320,7 @@ body::-webkit-scrollbar-track {
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
+    padding: 0 16px;
   }
 }
 .hero-info {
@@ -356,8 +331,8 @@ body::-webkit-scrollbar-track {
   line-height: 1.6;
   margin-bottom: 8px;
   @media screen and (min-width: 834px) {
-    margin-top: 216px;
-    margin-bottom: 80px;
+    margin-top: 230px;
+    margin-bottom: 64px;
   }
 }
 
@@ -419,7 +394,7 @@ body::-webkit-scrollbar-track {
   margin-bottom: 32px;
   @media screen and (min-width: 834px) {
     padding: 24px 37px;
-    margin-bottom: 80px;
+    margin-bottom: 64px;
   }
 }
 
@@ -584,8 +559,10 @@ body::-webkit-scrollbar-track {
   width: 257px;
   margin-bottom: 30px;
   @media screen and (min-width: 834px) {
-    width: 320px;
-    height: 352px;
+    width: 373px;
+    height: 476px;
+    background-color: #1995c233;
+    border-radius: 8px;
   }
 }
 
@@ -594,11 +571,17 @@ body::-webkit-scrollbar-track {
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
-  padding: 16px 16px;
+  padding: 16px;
   height: 286px;
   width: 257px;
   background-color: #1995c233;
   border-radius: 8px;
+  @media screen and (min-width: 834px) {
+    width: 373px;
+    height: 400px;
+    padding: 32px;
+    background-color: transparent;
+  }
 }
 
 .services-info {
@@ -609,6 +592,11 @@ body::-webkit-scrollbar-track {
 
 .services-img {
   margin-bottom: 16px;
+  @media screen and (min-width: 834px) {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 32px;
+  }
 }
 .services-title {
   font-size: 16px;
@@ -616,14 +604,14 @@ body::-webkit-scrollbar-track {
   line-height: 1.4;
   letter-spacing: -0.01em;
   margin-bottom: 11px;
+  @media screen and (min-width: 834px) {
+    font-size: 20px;
+  }
 }
 .services-text {
-  font-size: 12px;
   line-height: 1.2;
   letter-spacing: -0.01em;
 
-  @media screen and (min-width: 834px) {
-  }
   @media screen and (min-width: 1440px) {
     font-size: 20px;
   }
@@ -639,8 +627,12 @@ body::-webkit-scrollbar-track {
   padding: 14px 68px;
   border-radius: 80px;
   border: none;
-
   margin-top: 8px;
+  @media screen and (min-width: 834px) {
+    padding: 8px 32px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 /* Projects section */
@@ -652,6 +644,13 @@ body::-webkit-scrollbar-track {
   }
 }
 
+.projects-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-card {
   width: 100%;
   height: 257px;
@@ -660,6 +659,11 @@ body::-webkit-scrollbar-track {
   border-radius: 8px;
   position: relative;
   overflow: hidden;
+  @media screen and (min-width: 834px) {
+    width: 572px;
+    height: 341px;
+    margin-left: 96px;
+  }
 }
 
 .project-overlay {
@@ -671,6 +675,9 @@ body::-webkit-scrollbar-track {
   margin: 0 16px 16px;
   border-radius: 8px;
   background-color: #fff;
+  @media screen and (min-width: 834px) {
+    padding: 16px;
+  }
 }
 
 .project-title {
@@ -679,6 +686,10 @@ body::-webkit-scrollbar-track {
   margin: 0;
   font-size: 8px;
   font-weight: 700;
+  @media screen and (min-width: 834px) {
+    font-size: 16px;
+    text-align: left;
+  }
 }
 
 .project-btn {
@@ -698,6 +709,40 @@ body::-webkit-scrollbar-track {
   display: block;
   width: 100%;
   text-align: center;
+  @media screen and (min-width: 834px) {
+    display: none;
+  }
+}
+
+.project-text-list {
+  list-style-type: disc;
+  padding: 16px;
+}
+
+.project-text-list li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.project-text-list .bullet {
+  @media screen and (min-width: 834px) {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+
+    flex-shrink: 0;
+    margin-right: 16px;
+    margin-bottom: 6px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.project-text {
+  display: none;
+  @media screen and (min-width: 834px) {
+    display: flex;
+  }
 }
 
 /* Choose-u section */
@@ -730,10 +775,20 @@ body::-webkit-scrollbar-track {
   width: 257px;
   background-color: #1995c233;
   border-radius: 8px;
+  @media screen and (min-width: 834px) {
+    padding: 32px 16px 16px;
+    gap: 30px;
+    height: 205px;
+    width: 175px;
+  }
 }
 
 .choose-img {
   margin-bottom: 16px;
+  @media screen and (min-width: 834px) {
+    width: 65px;
+    height: 64px;
+  }
 }
 
 .choose-text {
@@ -743,8 +798,8 @@ body::-webkit-scrollbar-track {
   text-align: center;
 
   @media screen and (min-width: 834px) {
-    width: 320px;
-    height: 352px;
+    width: 143px;
+    height: 45px;
   }
   @media screen and (min-width: 1440px) {
     font-size: 20px;
@@ -756,7 +811,7 @@ body::-webkit-scrollbar-track {
   padding: 0 57px;
 
   @media screen and (min-width: 834px) {
-    padding: 0 32px;
+    padding: 0 131px;
   }
 }
 .team-item {
@@ -780,6 +835,10 @@ body::-webkit-scrollbar-track {
   width: 225px;
   background-color: var(--body-bg);
   border-radius: 8px;
+  @media screen and (min-width: 834px) {
+    height: 72px;
+    width: 242px;
+  }
 }
 
 .team-name {
@@ -788,7 +847,9 @@ body::-webkit-scrollbar-track {
   letter-spacing: -0.01em;
   text-align: center;
   color: var(--accent-color);
+  font-weight: 700;
   @media screen and (min-width: 834px) {
+    font-size: 16px;
   }
   @media screen and (min-width: 1440px) {
     font-size: 20px;
@@ -800,6 +861,9 @@ body::-webkit-scrollbar-track {
   letter-spacing: -0.01em;
   text-align: center;
   color: var(--accent-color);
+  @media screen and (min-width: 834px) {
+    font-size: 16px;
+  }
 }
 
 /* Partners section */
@@ -925,11 +989,30 @@ body::-webkit-scrollbar-track {
 }
 
 /* Feedback section */
+
+.feedback-contacts {
+  @media screen and (min-width: 834px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 40px;
+  }
+}
+
 .feedback-section {
   padding: 16px 0;
   background-color: #1995c233;
   border-radius: 8px;
+  @media screen and (min-width: 834px) {
+    border-radius: 8px 0 0 8px;
+    padding: 32px 0 0;
+  }
 }
+
+.feedback-container {
+  padding: 0 24px 0 64px;
+}
+
 .feedback-title {
   margin-bottom: 16px;
   font-weight: 600;
@@ -937,15 +1020,22 @@ body::-webkit-scrollbar-track {
   line-height: 1.2;
   letter-spacing: 0.01em;
   padding-left: 16px;
+  @media screen and (min-width: 834px) {
+    font-size: 16px;
+    padding-left: 0;
+  }
 }
 
 .feedback-form {
-  max-width: 295px;
+  width: 295px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
   gap: 4px;
+  @media screen and (min-width: 834px) {
+    width: 341px;
+    gap: 8px;
+  }
 }
 
 .feedback-form input,
@@ -956,9 +1046,16 @@ body::-webkit-scrollbar-track {
   font-size: 8px;
   font-style: italic;
   text-align: center;
+  @media screen and (min-width: 834px) {
+    font-size: 12px;
+  }
 }
 .feedback-form textarea {
   text-align: left;
+  @media screen and (min-width: 834px) {
+    padding-left: 42px;
+    padding-bottom: 48px;
+  }
 }
 
 .feedback-form button {
@@ -974,11 +1071,21 @@ body::-webkit-scrollbar-track {
   letter-spacing: 0.01em;
   transition: background-color 0.3s;
   margin-top: 4px;
+  @media screen and (min-width: 834px) {
+    margin-top: 8px;
+    margin-bottom: 197px;
+    width: 100%;
+    height: 68px;
+    letter-spacing: 0.01em;
+  }
 }
 
 .phone-input-wrapper {
   position: relative;
-  max-width: 295px;
+  width: 295px;
+  @media screen and (min-width: 834px) {
+    width: 341px;
+  }
 }
 
 .phone-prefix {
@@ -991,6 +1098,10 @@ body::-webkit-scrollbar-track {
   font-style: italic;
   color: #1d1d1d80;
   pointer-events: none;
+  @media screen and (min-width: 834px) {
+    font-size: 12px;
+    left: 54px;
+  }
 }
 
 .phone-input-wrapper input {
@@ -1000,12 +1111,22 @@ body::-webkit-scrollbar-track {
   font-style: italic;
   border: none;
   border-radius: 8px;
+  @media screen and (min-width: 834px) {
+    font-size: 12px;
+    padding: 8px 0;
+  }
 }
 /* Contacts section */
 
 .contacts-section {
   padding: 40px 0 80px;
+  @media screen and (min-width: 834px) {
+    padding: 32px 0 0 0;
+    background-color: #1995c233;
+    border-radius: 0 8px 8px 0;
+  }
 }
+
 .contacts-title {
   margin-bottom: 8px;
   font-weight: 600;
@@ -1014,7 +1135,8 @@ body::-webkit-scrollbar-track {
   letter-spacing: 0.02em;
   padding-left: 16px;
   @media (834px<=width) {
-    font-size: 36px;
+    font-size: 16px;
+    margin-bottom: 16px;
   }
 
   @media (1440px<=width) {
@@ -1033,6 +1155,11 @@ body::-webkit-scrollbar-track {
   align-items: start;
   gap: 8px;
   margin-bottom: 8px;
+  @media (834px<=width) {
+    font-size: 12px;
+    padding-left: 0;
+    margin-bottom: 16px;
+  }
 }
 .emails p:not(:last-child) {
   margin-bottom: 8px;
@@ -1043,15 +1170,28 @@ body::-webkit-scrollbar-track {
   width: 16px;
   height: 16px;
   margin-top: -2px;
+  @media (834px<=width) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .contacts-container {
   align-items: center;
+  @media screen and (min-width: 834px) {
+    padding: 0;
+    padding-right: 40px;
+  }
 }
 .contacts-map {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 834px) {
+    padding-top: 8px;
+    justify-content: start;
+    margin-bottom: 32px;
+  }
 }
 
 /* Footer section */
