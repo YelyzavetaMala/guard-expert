@@ -76,7 +76,7 @@ initResponsiveSwiper(".swiper-one", {
 initResponsiveSwiper(".swiper-two", {
   375: { slidesPerView: 1, spaceBetween: 20 },
   834: { slidesPerView: 2, spaceBetween: 24 },
-  1440: { slidesPerView: 3, spaceBetween: 30 },
+  1440: { slidesPerView: 3, spaceBetween: 60 },
 });
 
 // swiper 3 — по 1, 2, 4 слайди
