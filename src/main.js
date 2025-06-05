@@ -109,3 +109,31 @@ document.querySelectorAll(".faq-question").forEach((button) => {
     item.classList.toggle("active");
   });
 });
+
+const openButtons = document.querySelectorAll(".open-modal");
+const closeButtons = document.querySelectorAll(".close-modal");
+const modals = document.querySelectorAll(".modal");
+
+// Відкрити потрібну модалку
+openButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const modalId = btn.dataset.modal;
+    document.getElementById(modalId).classList.remove("hidden");
+  });
+});
+
+// Закрити всі модалки
+closeButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    btn.closest(".modal").classList.add("hidden");
+  });
+});
+
+// Клік поза модальним вмістом — також закриває
+modals.forEach((modal) => {
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+    }
+  });
+});
