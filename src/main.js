@@ -137,3 +137,12 @@ modals.forEach((modal) => {
     }
   });
 });
+
+const menuModal = document.getElementById("modal-menu");
+const menuLinks = menuModal.querySelectorAll(".menu-link-modal");
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menuModal.classList.add("hidden");
+  });
+});

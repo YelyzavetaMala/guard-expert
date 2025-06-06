@@ -50,8 +50,8 @@
               </picture>
             </a>
             <button
-              id="openModalBtn"
-              class="menu-button"
+              
+              class="menu-button open-modal" data-modal="modal-menu"
               title="open menu"
               type="button"
             >
@@ -1454,7 +1454,38 @@
   </footer>
     <!-- Modal section -->
 <section>
-  <!-- Модалка 1 -->
+  <!-- Modal Menu -->
+
+  <div class="modal hidden" id="modal-menu">
+    <div class="modal-menu-content">
+      <button class="close-modal">✖</button>
+      <ul class="menu-nav-modal">
+        <li class="menu-item-modal">
+          <a class="menu-link-modal" href="#about">Про нас</a>
+        </li>
+        <li class="menu-item-modal">
+          <a class="menu-link-modal" href="#services">Послуги</a>
+        </li>
+        <li class="menu-item-modal">
+          <a class="menu-link-modal" href="#projects">Проєкти</a>
+        </li>
+        <li class="menu-item-modal">
+          <a class="menu-link-modalr" href="#choose-us">Чому ми?</a>
+        </li>
+        <li class="menu-item-modal">
+          <a class="menu-link-modal" href="#team">Команда</a>
+        </li>
+        <li class="menu-item-modal">
+          <a class="menu-link-modal" href="#partners">Партнери</a>
+        </li>
+        <li class="menu-item-modal">
+          <a class="menu-link-modal" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<!-- Project Modal -->
 <div class="modal hidden" id="project-modal1">
   <div class="modal-content">
     <button class="close-modal">✖</button>
@@ -1467,8 +1498,6 @@
    
   </div>
 </div>
-
-<!-- Модалка 2 -->
 <div class="modal hidden" id="project-modal2">
   <div class="modal-content">
     <button class="close-modal">✖</button>
@@ -1480,8 +1509,6 @@
   
   </div>
 </div>
-
-<!-- Модалка 3 -->
 <div class="modal hidden" id="project-modal3">
   <div class="modal-content">
     <button class="close-modal">✖</button>
@@ -1495,8 +1522,6 @@
     
   </div>
 </div>
-
-<!-- Модалка 4 -->
 <div class="modal hidden" id="project-modal4">
   <div class="modal-content">
     <button class="close-modal">✖</button>
