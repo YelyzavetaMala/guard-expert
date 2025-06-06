@@ -147,7 +147,7 @@
             </a>
           </div>
           </div>
-          <button class="hero-button">Консультація експерта</button>
+          <button class="adviceBtn hero-button">Консультація експерта</button>
         </div>
       </section>
     </div>
@@ -1446,7 +1446,7 @@
           </div>
         </div>
         </div>
-        <button class="footer-button">Консультація експерта</button>
+        <button class="adviceBtn footer-button">Консультація експерта</button>
       </div>
         <p class="copyright">© 2025 Guard Expert. Усі права захищено</p>
       </div>
@@ -1482,6 +1482,33 @@
           <a class="menu-link-modal" href="#faq">FAQ</a>
         </li>
       </ul>
+    </div>
+  </div>
+
+<!-- Advice Modal -->
+
+  <div class="popup-backdrop" id="advicePopup">
+    <div class="advice-window">
+      <button class="advice-close" id="adviceClose">✖</button>
+      <h4 class="advice-title">Заповніть форму</h4>
+      <form class="advice-form" action="#" method="post">
+        
+        <input type="email" id="email" name="email" placeholder="Електронна адреса" required>
+      
+        
+        <div class="advice-phone-wrapper">
+          <span class="phone-prefix">+380</span>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Номер телефону"
+            maxlength="9"
+            required
+          />
+        </div>
+        <button class="advice-btn" type="submit">Отримати консультацію</button>
+      </form>
     </div>
   </div>
 

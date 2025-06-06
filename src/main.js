@@ -146,3 +146,19 @@ menuLinks.forEach((link) => {
     menuModal.classList.add("hidden");
   });
 });
+
+const adviceBtns = document.querySelectorAll(".adviceBtn");
+const advicePopup = document.getElementById("advicePopup");
+const adviceClose = document.getElementById("adviceClose");
+
+adviceBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    advicePopup.style.display = "flex";
+    document.body.classList.add("noscroll");
+  });
+});
+
+adviceClose.addEventListener("click", () => {
+  advicePopup.style.display = "none";
+  document.body.classList.remove("noscroll");
+});
