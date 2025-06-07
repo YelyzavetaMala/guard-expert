@@ -183,7 +183,7 @@
       <div class="container certification-container">
         <h3 class="second-title">Сертифікація та ліцензії</h3>
         <div class="swiper-certification">
-          <div class="swiper swiper-one">
+          <div class="swiper custom-swiper swiper-one">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="certification-item">
@@ -312,9 +312,10 @@
       <div class="container services-container">
         <h2 class="section-title">Послуги</h2>
         
-          <div class="swiper swiper-two">
+          <div class="swiper custom-swiper swiper-two">
             <div class=" swiper-wrapper">
               <div class="swiper-slide services-item ">
+                <div>
                 <div class="services-info-card">
                 
                     <picture>
@@ -342,6 +343,7 @@
                 </div>
                 <button class="services-button">Детальніше →</button>
               </div>
+            </div>
               <div class="swiper-slide services-item ">
                 <div class="services-info-card">
                 
@@ -500,7 +502,7 @@
       <div class="container project-container">
         <h2 class="section-title">Проєкти</h2>
     
-        <div class="swiper swiper-six">
+        <div class="swiper custom-swiper swiper-six">
           <div class="swiper-wrapper">
             <div class="swiper-slide projects-item">
               <div class="project-card-desk"> 
@@ -584,7 +586,7 @@
     <section id="choose-us" class="section">
       <div class="container choose-container">
         <h2 class="section-title">Чому обирають нас?</h2>
-        <div class="swiper swiper-three">
+        <div class="swiper custom-swiper swiper-three">
           <div class=" swiper-wrapper">
             <div class="swiper-slide choose-item ">
               <div class="choose-info-card">
@@ -702,7 +704,7 @@
     <section id="team" class="section">
       <div class="container team-container">
         <h2 class="section-title">Наша команда</h2>
-        <div class="swiper swiper-five">
+        <div class="swiper custom-swiper swiper-five">
           <div class=" swiper-wrapper">
             <div class="swiper-slide team-item " style="background-image: url('/src/img/team/team1.jpg');">
               <div class="team-info-card" >
@@ -744,7 +746,7 @@
     <section id="partners" class="section">
       <div class="container partners-container">
         <h2 class="section-title">Партнери</h2>
-         <div class="swiper swiper-four">
+         <div class="swiper custom-swiper swiper-four">
           <div class=" swiper-wrapper partners-list">
             <div class="swiper-slide partners-item ">
               <div class="partners-info-card">
@@ -1173,6 +1175,10 @@
         
           <button type="submit">Надіслати повідомлення</button>
         </form>
+        <div id="successModal" class="hidden">
+          <p>Інформацію надіслано. Дякуємо!</p>
+          <button onclick="closeModal()">Закрити</button>
+        </div>
       </div>
     </section>
     <!-- Contacts section -->

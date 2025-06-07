@@ -74,7 +74,7 @@ initResponsiveSwiper(".swiper-one", {
 
 // swiper 2 — по 1, 1, 2 слайди
 initResponsiveSwiper(".swiper-two", {
-  375: { slidesPerView: 1, spaceBetween: 20 },
+  375: { slidesPerView: 1, spaceBetween: 16 },
   834: { slidesPerView: 2, spaceBetween: 24 },
   1440: { slidesPerView: 3, spaceBetween: 60 },
 });
@@ -162,3 +162,26 @@ adviceClose.addEventListener("click", () => {
   advicePopup.style.display = "none";
   document.body.classList.remove("noscroll");
 });
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+
+    const response = await fetch("https://your-server.com/send", {
+      method: "POST",
+      body: formData,
+    });
+
+    if (response.ok) {
+      document.getElementById("successModal").classList.remove("hidden");
+      this.reset();
+    } else {
+      alert("Помилка при надсиланні. Спробуйте ще раз.");
+    }
+  });
+
+function closeModal() {
+  document.getElementById("successModal").classList.add("hidden");
+}

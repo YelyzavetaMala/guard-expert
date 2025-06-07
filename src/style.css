@@ -230,6 +230,54 @@ body::-webkit-scrollbar-track {
   }
 }
 
+.swiper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+}
+
+.swiper-pagination {
+  margin-top: 30px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+  width: 32px;
+  height: 32px;
+
+  color: #1894c1;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-swiper .swiper-button-prev {
+  z-index: 100;
+  left: -6px;
+}
+
+.custom-swiper .swiper-button-next {
+  z-index: 100;
+  right: -6px;
+}
+
+.custom-swiper .swiper-button-next::after,
+.custom-swiper .swiper-button-prev::after {
+  font-size: 20px;
+  color: #1894c1;
+}
+
 /* Header section */
 
 .logo-header {
@@ -518,21 +566,6 @@ body::-webkit-scrollbar-track {
     padding: 0 131px;
   }
 }
-.swiper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.swiper-pagination {
-  margin-top: 30px;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-}
-
 .certification-item {
   display: flex;
   flex-direction: column;
@@ -541,10 +574,12 @@ body::-webkit-scrollbar-track {
 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #1995c233;
+  border: 1px solid #4db8df33;
   padding: 8px 0;
   text-align: center;
   overflow: hidden;
+  max-width: 257px;
+  margin: 0 auto;
 }
 .certification-img {
   width: 257px;
@@ -1874,4 +1909,14 @@ body::-webkit-scrollbar-track {
     padding: 25px 60px;
     margin-bottom: 82px;
   }
+}
+
+#successModal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
