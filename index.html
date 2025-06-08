@@ -1153,7 +1153,7 @@
     <section class="feedback-section">
       <div class="container feedback-container">
         <h4 class="feedback-title">Залишились питання?</h4>
-        <form class="feedback-form" action="#" method="post">
+        <form class="contact-form feedback-form" action="https://script.google.com/macros/s/AKfycbyg96NKhzvGYMXwMrWFT3scDg3J35u7AeisJr1YhXqRSWJXG27VX40Xeh2cLrjXpnHJtQ/exec" method="POST">
           
           <input type="email" id="email" name="email" placeholder="Електронна адреса" required>
         
@@ -1171,14 +1171,11 @@
           </div>
         
         
-          <textarea id="message" name="message" rows="7" placeholder="Напишіть нам ..." required></textarea>
+          <textarea id="message" name="comment" rows="7" placeholder="Напишіть нам ..."></textarea>
         
           <button type="submit">Надіслати повідомлення</button>
         </form>
-        <div id="successModal" class="hidden">
-          <p>Інформацію надіслано. Дякуємо!</p>
-          <button onclick="closeModal()">Закрити</button>
-        </div>
+       
       </div>
     </section>
     <!-- Contacts section -->
@@ -1497,7 +1494,7 @@
     <div class="advice-window">
       <button class="advice-close" id="adviceClose">✖</button>
       <h4 class="advice-title">Заповніть форму</h4>
-      <form class="advice-form" action="#" method="post">
+      <form class="contact-form advice-form" action="https://script.google.com/macros/s/AKfycbyg96NKhzvGYMXwMrWFT3scDg3J35u7AeisJr1YhXqRSWJXG27VX40Xeh2cLrjXpnHJtQ/exec" method="POST">
         
         <input type="email" id="email" name="email" placeholder="Електронна адреса" required>
       
@@ -1515,6 +1512,10 @@
         </div>
         <button class="advice-btn" type="submit">Отримати консультацію</button>
       </form>
+      <div id="form-status" style="display:none;">
+        <p>Повідомлення надіслано ✅</p>
+        <button type="button" class="close-status">✖</button>
+      </div>
     </div>
   </div>
 

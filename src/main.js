@@ -163,25 +163,41 @@ adviceClose.addEventListener("click", () => {
   document.body.classList.remove("noscroll");
 });
 
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", async function (e) {
+const forms = document.querySelectorAll(".contact-form");
+const status = document.getElementById("form-status");
+
+forms.forEach((form) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const formData = new FormData(this);
 
-    const response = await fetch("https://your-server.com/send", {
-      method: "POST",
-      body: formData,
-    });
+    const data = new FormData(form);
 
-    if (response.ok) {
-      document.getElementById("successModal").classList.remove("hidden");
-      this.reset();
-    } else {
-      alert("Помилка при надсиланні. Спробуйте ще раз.");
-    }
+    fetch(
+      "https://script.google.com/macros/s/AKfycbyg96NKhzvGYMXwMrWFT3scDg3J35u7AeisJr1YhXqRSWJXG27VX40Xeh2cLrjXpnHJtQ/exec",
+      {
+        method: "POST",
+        body: data,
+      }
+    )
+      .then(() => {
+        // Закрити всі модальні вікна
+        document
+          .querySelectorAll(".modal")
+          .forEach((m) => m.classList.add("hidden"));
+        // Показати статус
+        document.getElementById("form-status").classList.remove("hidden");
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("Помилка:", error);
+        alert("Сталася помилка, спробуйте ще раз.");
+      });
   });
+});
 
-function closeModal() {
-  document.getElementById("successModal").classList.add("hidden");
-}
+const formStatus = document.getElementById("form-status");
+const closeStatusBtn = document.querySelector(".close-status");
+
+closeStatusBtn.addEventListener("click", () => {
+  formStatus.style.display = "none";
+});
