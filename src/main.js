@@ -180,11 +180,11 @@ forms.forEach((form) => {
       }
     )
       .then(() => {
-        // Закрити всі модальні вікна
+        // Закриваємо всі модальні вікна
         document
           .querySelectorAll(".modal")
           .forEach((m) => m.classList.add("hidden"));
-        // Показати статус
+        // Показуємо повідомлення
         document.getElementById("form-status").classList.remove("hidden");
         form.reset();
       })
@@ -193,6 +193,10 @@ forms.forEach((form) => {
         alert("Сталася помилка, спробуйте ще раз.");
       });
   });
+});
+
+document.querySelector(".close-status").addEventListener("click", () => {
+  document.getElementById("form-status").classList.add("hidden");
 });
 
 const formStatus = document.getElementById("form-status");

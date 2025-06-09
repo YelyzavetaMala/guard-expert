@@ -1512,13 +1512,31 @@
         </div>
         <button class="advice-btn" type="submit">Отримати консультацію</button>
       </form>
-      <div id="form-status" style="display:none;">
-        <p>Повідомлення надіслано ✅</p>
-        <button type="button" class="close-status">✖</button>
-      </div>
     </div>
   </div>
-
+  <div id="form-status" class="modal hidden">
+    <div class="modal-content status-message">
+      <button class="close-status">✖</button>
+      <p class="status-text">Дякуємо!</p>
+      <p class="status-text">Ми з вами зв’яжемося!</p>
+      <picture>
+        <source
+          srcset="
+          /src/img/message.png 1x
+          "
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <img
+          class="message-img"
+          loading="lazy"
+          src="/src/img/message.png"
+          alt="photo desc"
+          
+        />
+      </picture>
+    </div>
+  </div>
 <!-- Project Modal -->
 <div class="modal hidden" id="project-modal1">
   <div class="modal-content">
