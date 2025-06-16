@@ -89,7 +89,7 @@ initResponsiveSwiper(".swiper-three", {
 initResponsiveSwiper(".swiper-four", {
   375: { slidesPerView: 2, spaceBetween: 16 },
   834: { slidesPerView: 3, spaceBetween: 20 },
-  1440: { slidesPerView: 7, spaceBetween: 24 },
+  1440: { slidesPerView: 6, spaceBetween: 16 },
 });
 
 initResponsiveSwiper(".swiper-five", {
