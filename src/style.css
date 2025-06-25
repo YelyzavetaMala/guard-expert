@@ -1625,7 +1625,8 @@ body::-webkit-scrollbar-track {
   }
 }
 
-.contacts-item img {
+.contacts-img {
+  object-fit: cover;
   width: 16px;
   height: 16px;
   margin-top: -2px;
