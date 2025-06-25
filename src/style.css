@@ -1327,37 +1327,36 @@ body::-webkit-scrollbar-track {
 }
 
 .faq-answer {
-  padding: 0 8px;
-
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.6s ease, opacity 0.6s ease;
   font-size: 8px;
 
-  background-color: #1995c233;
   border: none;
   border-radius: 8px;
   margin-bottom: 8px;
   @media screen and (min-width: 834px) {
     font-size: 16px;
-    padding: 0 32px;
   }
   @media screen and (min-width: 1440px) {
     margin-bottom: 16px;
     font-size: 20px;
-    padding: 0 87px;
   }
 }
 
-.answer-text {
-  padding: 13px 0;
-  @media screen and (min-width: 834px) {
-    padding: 16px 0;
-  }
-}
-
+.answer-text,
 .answer-list {
-  padding: 13px 0;
+  border-radius: 8px;
+  margin: 2px 0;
+  padding: 8px 13px;
+  background-color: #1995c233;
+  @media screen and (min-width: 834px) {
+    margin: 4px 0;
+    padding: 16px 32px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 16px 87px;
+  }
 }
 
 .faq-item.active .faq-answer {
