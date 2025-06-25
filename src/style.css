@@ -278,6 +278,9 @@ body::-webkit-scrollbar-track {
 .custom-swiper .swiper-button-prev::after {
   font-size: 20px;
   color: #1894c1;
+  @media screen and (min-width: 834px) {
+    font-size: 27px;
+  }
 }
 
 .swiper-one .swiper-pagination-bullet,
@@ -290,6 +293,16 @@ body::-webkit-scrollbar-track {
   width: 12px;
   height: 8px;
   border-radius: 8px;
+  @media screen and (min-width: 834px) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.hide-swiper-nav .swiper-button-next,
+.hide-swiper-nav .swiper-button-prev,
+.hide-swiper-nav .swiper-pagination {
+  display: none !important;
 }
 /* Header section */
 
@@ -574,9 +587,9 @@ body::-webkit-scrollbar-track {
 }
 
 .certification-container {
-  padding: 0 24px;
+  padding: 0 32px;
   @media screen and (min-width: 834px) {
-    padding: 0 131px;
+    padding: 0 62px;
   }
 }
 .certification-item {
@@ -594,6 +607,7 @@ body::-webkit-scrollbar-track {
   margin: 0 auto;
   @media (min-width: 834px) {
     max-width: 274px;
+    margin-bottom: 16px;
   }
   @media (min-width: 1440px) {
     max-width: 332px;
@@ -696,7 +710,7 @@ body::-webkit-scrollbar-track {
   padding: 0 24px;
 
   @media screen and (min-width: 834px) {
-    padding: 0 22px;
+    padding: 0 24px;
   }
 }
 
@@ -705,7 +719,7 @@ body::-webkit-scrollbar-track {
   width: 257px;
   margin: 0 auto;
   @media screen and (min-width: 834px) {
-    width: 373px;
+    width: 393px;
     height: 476px;
   }
   @media screen and (min-width: 1440px) {
@@ -719,18 +733,20 @@ body::-webkit-scrollbar-track {
   width: 257px;
 
   margin: 0 auto;
-  margin-bottom: 40px;
+
   @media screen and (min-width: 834px) {
-    width: 363px;
+    width: 353px;
     height: 476px;
     background-color: #1995c233;
     border-radius: 8px;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: 1440px) {
     width: 419px;
     height: 563px;
     background-color: #1995c233;
     border-radius: 8px;
+    margin-bottom: 64px;
   }
 }
 
@@ -859,9 +875,10 @@ body::-webkit-scrollbar-track {
   width: 257px;
 
   margin: 0 auto;
-  margin-bottom: 4px;
+  margin-bottom: 32px;
   @media screen and (min-width: 834px) {
     width: 754px;
+    margin-bottom: 2px;
   }
   @media screen and (min-width: 1440px) {
     display: flex;
@@ -1030,7 +1047,7 @@ body::-webkit-scrollbar-track {
 
 .choose-container {
   margin: 0 auto;
-  padding: 0 57px;
+  padding: 0 32px;
   @media screen and (min-width: 834px) {
     padding: 0 32px;
   }
@@ -1054,6 +1071,7 @@ body::-webkit-scrollbar-track {
   background-color: #1995c233;
   border-radius: 8px;
   margin: 0 auto;
+  margin-bottom: 32px;
   @media screen and (min-width: 834px) {
     padding: 32px 16px 16px;
     gap: 30px;
@@ -1111,7 +1129,7 @@ body::-webkit-scrollbar-track {
   @media screen and (min-width: 834px) {
     width: 294px;
     height: 352px;
-    margin-bottom: 38px;
+    margin-bottom: 44px;
   }
   @media screen and (min-width: 1440px) {
     width: 332px;
@@ -1201,6 +1219,7 @@ body::-webkit-scrollbar-track {
   @media screen and (min-width: 834px) {
     width: 175px;
     height: 78px;
+    margin-bottom: 28px;
   }
   @media screen and (min-width: 1440px) {
     width: 158px;

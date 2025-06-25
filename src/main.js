@@ -53,6 +53,25 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 */
 function initResponsiveSwiper(selector, breakpointsConfig) {
+  const container = document.querySelector(selector);
+  const slidesCount = container.querySelectorAll(".swiper-slide").length;
+
+  const screenWidth = window.innerWidth;
+  let slidesPerView = 1;
+
+  if (screenWidth >= 1440 && breakpointsConfig[1440]) {
+    slidesPerView = breakpointsConfig[1440].slidesPerView;
+  } else if (screenWidth >= 834 && breakpointsConfig[834]) {
+    slidesPerView = breakpointsConfig[834].slidesPerView;
+  } else if (breakpointsConfig[375]) {
+    slidesPerView = breakpointsConfig[375].slidesPerView;
+  }
+
+  // Додати клас для приховування навігації, якщо слайдів недостатньо
+  if (slidesCount <= slidesPerView) {
+    container.classList.add("hide-swiper-nav");
+  }
+
   return new Swiper(selector, {
     modules: [Pagination, Navigation],
     breakpoints: breakpointsConfig,
@@ -76,7 +95,7 @@ initResponsiveSwiper(".swiper-one", {
 initResponsiveSwiper(".swiper-two", {
   375: { slidesPerView: 1, spaceBetween: 16 },
   834: { slidesPerView: 2, spaceBetween: 1 },
-  1440: { slidesPerView: 3, spaceBetween: 60 },
+  1440: { slidesPerView: 3, spaceBetween: 1 },
 });
 
 // swiper 3 — по 1, 2, 4 слайди
