@@ -74,6 +74,7 @@ function initResponsiveSwiper(selector, breakpointsConfig) {
 
   return new Swiper(selector, {
     modules: [Pagination, Navigation],
+    loop: true,
     breakpoints: breakpointsConfig,
     pagination: {
       el: `${selector} .swiper-pagination`,
@@ -138,6 +139,7 @@ openButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modalId = btn.dataset.modal;
     document.getElementById(modalId).classList.remove("hidden");
+    document.body.classList.add("noscroll");
   });
 });
 
@@ -145,6 +147,7 @@ openButtons.forEach((btn) => {
 closeButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     btn.closest(".modal").classList.add("hidden");
+    document.body.classList.remove("noscroll");
   });
 });
 
