@@ -1832,9 +1832,15 @@ body::-webkit-scrollbar-track {
   align-items: center;
   z-index: 100;
 }
+
 .modal.hidden {
   display: none;
 }
+
+.message-modal {
+  z-index: 1000;
+}
+
 .modal-content {
   position: relative;
   background: var(--body-bg);

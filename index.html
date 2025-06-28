@@ -1660,26 +1660,27 @@
       </form>
     </div>
   </div>
-  <div id="form-status" class="modal hidden">
+  <div id="form-status" class="modal  hidden message-modal">
     <div class="modal-content status-message">
       <button class="close-status">✖</button>
       <p class="status-text">Дякуємо!</p>
       <p class="status-text">Ми з вами зв’яжемося!</p>
+      </picture>
       <picture>
-        <source
-          srcset="
-          /src/img/message.png 1x
-          "
-          media="(min-width: 320px)"
-          type="image/png"
-        />
-        <img
-          class="message-img"
-          loading="lazy"
-          src="/src/img/message.png"
-          alt="photo desc"
-          
-        />
+        <!-- Desktop -->
+        <source media="(min-width: 1440px)" srcset="
+        /src/img/message-desk.png   1x,
+        /src/img/message-2x-desk.png 2x
+          " type="image/png" />
+        <!-- Mobile + Tablet -->
+        <source media="(max-width: 1439px)" srcset="
+        /src/img/message.png   1x,
+        /src/img/message-2x.png 2x
+          " type="image/png" />
+        <img    class="message-img"
+        loading="lazy"
+        src="/src/img/message.png"
+        alt="photo desc"/>
       </picture>
     </div>
   </div>
