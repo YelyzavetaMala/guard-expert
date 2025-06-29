@@ -514,6 +514,13 @@ body::-webkit-scrollbar-track {
   }
 }
 
+.hero-button:hover,
+.hero-button:active,
+.hero-button:focus {
+  color: var(--accent-color);
+  background-color: var(--second-text-color);
+}
+
 /* About section */
 
 .about-lists {
@@ -834,6 +841,7 @@ body::-webkit-scrollbar-track {
   border-radius: 80px;
   border: none;
   margin-top: 8px;
+  transition: transform 0.3s ease;
   @media screen and (min-width: 834px) {
     padding: 8px 32px;
     margin-left: 32px;
@@ -842,6 +850,12 @@ body::-webkit-scrollbar-track {
   @media screen and (min-width: 1440px) {
     padding: 10px 32px;
   }
+}
+
+.services-button:hover,
+.services-button:active,
+.services-button:focus {
+  transform: scale(1.1);
 }
 
 /* Projects section */
@@ -1470,7 +1484,7 @@ body::-webkit-scrollbar-track {
   }
 }
 
-.feedback-form button {
+.form-button {
   padding: 16px;
   background-color: var(--accent-color);
   color: var(--second-text-color);
@@ -1496,6 +1510,13 @@ body::-webkit-scrollbar-track {
     height: 79px;
     margin-bottom: 219px;
   }
+}
+
+.form-button:hover,
+.form-button:active,
+.form-button:focus {
+  color: var(--accent-color);
+  background-color: var(--second-text-color);
 }
 
 .phone-input-wrapper {
@@ -1812,6 +1833,14 @@ body::-webkit-scrollbar-track {
     margin-bottom: 64px;
   }
 }
+
+.footer-button:hover,
+.footer-button:active,
+.footer-button:focus {
+  color: var(--accent-color);
+  background-color: var(--second-text-color);
+}
+
 .copyright {
   margin: 0 auto;
   color: var(--second-text-color);
@@ -1919,6 +1948,7 @@ body.noscroll {
 
   overflow-y: auto;
 }
+
 .advice-window {
   position: relative;
   background: var(--body-bg);

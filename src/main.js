@@ -14,44 +14,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-/*
-let swiperInstance = null;
-
-function initSwiper() {
-  const screenWidth = window.innerWidth;
-  console.log("Init swiper at", screenWidth);
-
-  if (screenWidth < 1024 && !swiperInstance) {
-    console.log("Creating swiper...");
-    swiperInstance = new Swiper(".swiper-certification-init", {
-      modules: [Pagination, Navigation, Scrollbar, Keyboard, Mousewheel],
-      breakpoints: {
-        375: { slidesPerView: 1, spaceBetween: 35 },
-        834: { slidesPerView: 2, spaceBetween: 24 },
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      keyboard: { enabled: true },
-      mousewheel: true,
-    });
-  } else if (screenWidth >= 1024 && swiperInstance) {
-    console.log("Destroying swiper...");
-    swiperInstance.destroy(true, true);
-    swiperInstance = null;
-  }
-}
-
-window.addEventListener("DOMContentLoaded", () => {
-  initSwiper();
-  window.addEventListener("resize", initSwiper);
-});
-*/
 function initResponsiveSwiper(selector, breakpointsConfig) {
   const container = document.querySelector(selector);
   const slidesCount = container.querySelectorAll(".swiper-slide").length;
@@ -67,7 +29,6 @@ function initResponsiveSwiper(selector, breakpointsConfig) {
     slidesPerView = breakpointsConfig[375].slidesPerView;
   }
 
-  // Додати клас для приховування навігації, якщо слайдів недостатньо
   if (slidesCount <= slidesPerView) {
     container.classList.add("hide-swiper-nav");
   }
@@ -92,14 +53,12 @@ initResponsiveSwiper(".swiper-one", {
   1440: { slidesPerView: 3, spaceBetween: 32 },
 });
 
-// swiper 2 — по 1, 1, 2 слайди
 initResponsiveSwiper(".swiper-two", {
   375: { slidesPerView: 1, spaceBetween: 16 },
   834: { slidesPerView: 2, spaceBetween: 1 },
   1440: { slidesPerView: 3, spaceBetween: 1 },
 });
 
-// swiper 3 — по 1, 2, 4 слайди
 initResponsiveSwiper(".swiper-three", {
   375: { slidesPerView: 1, spaceBetween: 16 },
   834: { slidesPerView: 4, spaceBetween: 20 },
@@ -151,7 +110,6 @@ closeButtons.forEach((btn) => {
   });
 });
 
-// Клік поза модальним вмістом — також закриває
 modals.forEach((modal) => {
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
@@ -202,12 +160,13 @@ forms.forEach((form) => {
       }
     )
       .then(() => {
-        // Закриваємо всі модальні вікна
         document
           .querySelectorAll(".modal")
           .forEach((m) => m.classList.add("hidden"));
-        // Показуємо повідомлення
-        document.getElementById("form-status").classList.remove("hidden");
+
+        const statusModal = document.getElementById("form-status");
+        statusModal.style.display = "flex";
+        document.body.classList.add("noscroll");
         form.reset();
       })
       .catch((error) => {
@@ -218,7 +177,9 @@ forms.forEach((form) => {
 });
 
 document.querySelector(".close-status").addEventListener("click", () => {
-  document.getElementById("form-status").classList.add("hidden");
+  const statusModal = document.getElementById("form-status");
+  statusModal.style.display = "none";
+  document.body.classList.remove("noscroll");
 });
 
 const formStatus = document.getElementById("form-status");
