@@ -153,7 +153,7 @@ forms.forEach((form) => {
     const data = new FormData(form);
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbyg96NKhzvGYMXwMrWFT3scDg3J35u7AeisJr1YhXqRSWJXG27VX40Xeh2cLrjXpnHJtQ/exec",
+      "https://script.google.com/macros/s/AKfycbxGR_nGYIUX03ZuCvo28lEP6yWyjp-ctg5nnrg2kBD7YJHuPMLnnuj1iAw5DZlsD0Uj/exec",
       {
         method: "POST",
         body: data,
