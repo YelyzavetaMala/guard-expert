@@ -398,6 +398,33 @@ body::-webkit-scrollbar-track {
   }
 }
 
+.buttons-translation {
+  display: none;
+  @media screen and (min-width: 834px) {
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent-color);
+    padding: 0 6px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+  }
+}
+.buttons-lang {
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 834px) {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent-color);
+    padding: 0 6px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+  }
+}
+
 /* Hero section */
 .hero-container {
   @media screen and (min-width: 834px) {
@@ -1931,6 +1958,28 @@ body::-webkit-scrollbar-track {
   font-size: 16px;
   color: var(--accent-color);
   width: 209px;
+}
+
+.buttons-translation-modal {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-color);
+
+  margin: 0 auto;
+  @media screen and (min-width: 834px) {
+    display: none;
+  }
+}
+.buttons-lang-modal {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-color);
+  padding-top: 20px;
 }
 
 .menu-item-modal:hover,
