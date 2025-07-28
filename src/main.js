@@ -188,3 +188,58 @@ const closeStatusBtn = document.querySelector(".close-status");
 closeStatusBtn.addEventListener("click", () => {
   formStatus.style.display = "none";
 });
+
+// зміна мови
+const originalText = {};
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Зберігаємо українські тексти з HTML
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    originalText[key] = el.textContent;
+  });
+
+  // Завантажуємо збережену мову, якщо була
+  const savedLang = localStorage.getItem("lang") || "ua";
+  if (savedLang === "en") {
+    setLanguage("en");
+  }
+
+  // Кнопки
+  document
+    .getElementById("lang-en")
+    .addEventListener("click", () => setLanguage("en"));
+  document
+    .getElementById("lang-ua")
+    .addEventListener("click", () => restoreUkrainian());
+});
+
+async function setLanguage(lang) {
+  try {
+    const response = await fetch(`/lang.${lang}.json`);
+    if (!response.ok) throw new Error("Файл не знайдено");
+
+    const translations = await response.json();
+
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[key]) {
+        el.textContent = translations[key];
+      }
+    });
+
+    localStorage.setItem("lang", lang);
+  } catch (err) {
+    console.error("Помилка завантаження мови:", err.message);
+  }
+}
+
+function restoreUkrainian() {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    if (originalText[key]) {
+      el.textContent = originalText[key];
+    }
+  });
+  localStorage.setItem("lang", "ua");
+}
