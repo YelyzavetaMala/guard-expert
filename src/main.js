@@ -201,17 +201,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Завантажуємо збережену мову, якщо була
   const savedLang = localStorage.getItem("lang") || "ua";
+
   if (savedLang === "en") {
-    setLanguage("en");
+    setLanguage("en").then(() => {
+      updateActiveLang(savedLang);
+    });
+  } else {
+    restoreUkrainian();
+    updateActiveLang(savedLang);
+  }
+
+  function updateActiveLang(lang) {
+    document.querySelectorAll("[data-lang]").forEach((el) => {
+      if (el.getAttribute("data-lang") === lang) {
+        el.classList.add("active-lang");
+      } else {
+        el.classList.remove("active-lang");
+      }
+    });
+
+    const activeButton = document.querySelector(`[data-lang="${lang}"]`);
+    if (activeButton) {
+      activeButton.classList.add("active-lang");
+    }
   }
 
   // Кнопки
-  document
-    .getElementById("lang-en")
-    .addEventListener("click", () => setLanguage("en"));
-  document
-    .getElementById("lang-ua")
-    .addEventListener("click", () => restoreUkrainian());
+  document.querySelectorAll("[data-lang]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const lang = btn.getAttribute("data-lang");
+      if (lang === "en") {
+        setLanguage("en").then(() => {
+          updateActiveLang("en");
+        });
+      } else {
+        restoreUkrainian();
+        updateActiveLang("ua");
+      }
+    });
+  });
 });
 
 async function setLanguage(lang) {
