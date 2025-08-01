@@ -1,5 +1,10 @@
 {
-  "title": "Welcome to our site",
-  "description": "We are glad to see you",
-  "button": "Expert consultation"
+  "about-us": "About us",
+  "services": "Services",
+  "projects": "Projects",
+  "why-us": "Why us?",
+  "team": "Our team",
+  "partners": "Partners",
+  "hero-title": "Gardexpert LLC",
+  "hero-button": "Expert сonsultation"
 }
