@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function setLanguage(lang) {
   try {
-    const response = await fetch(`/lang.${lang}.json`);
+    const response = await fetch(`../public/lang.en.json`);
     if (!response.ok) throw new Error("Файл не знайдено");
 
     const translations = await response.json();
