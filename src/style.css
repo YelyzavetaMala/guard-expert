@@ -1953,6 +1953,7 @@ body::-webkit-scrollbar-track {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-left: 6px;
 }
 .menu-item-modal {
   font-size: 16px;
@@ -1962,7 +1963,8 @@ body::-webkit-scrollbar-track {
 
 .buttons-translation-modal {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+
   align-items: end;
   font-size: 14px;
   font-weight: 400;
@@ -1976,6 +1978,7 @@ body::-webkit-scrollbar-track {
 .buttons-lang-modal {
   border: none;
   background-color: transparent;
+
   font-size: 14px;
   font-weight: 400;
   color: var(--accent-color);
