@@ -1,5 +1,5 @@
 import "./js/services";
-
+import "../public/lang.en.json";
 import "./style.css";
 import Swiper from "swiper";
 import {
