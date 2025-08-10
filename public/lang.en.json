@@ -106,5 +106,13 @@
   "advicePopup-title": "Fill out the form",
   "advice-btn": "Get a consultation",
   "status-message1": "Thank you!",
-  "status-message2": "We will contact you soon!"
+  "status-message2": "We will contact you soon!",
+  "modal-services-text11": "You can order a project of any complexity and an individual solution specifically for your type of premises/request.",
+  "modal-services-text12": "We design: fire alarm systems, fire suppression systems, early emergency detection and public alert systems, ventilation and air conditioning systems, and communication systems.",
+  "modal-services-text13": "Included: fire system design, equipment selection, consultation at all stages.",
+  "modal-services-text21": "LLC  «Gardexpert» performs professional installation of fire alarm systems that ensure timely fire detection and automatic alerting.",
+  "modal-services-text22": "Description: The alarm systems we install are adapted to different types of facilities: office premises, warehouses, shopping centers, production facilities, etc.",
+  "modal-services-text23": "Included: installation and configuration, functionality testing, user guidance, and technical support.",
+  "modal-services-text31": "We install automatic fire suppression systems that provide immediate response to ignition by delivering extinguishing agents to the combustion zone.",
+  "modal-services-text32": "Types of systems: depending on the facility’s needs and the client’s preferences, we install different types of fire suppression:"
 }
