@@ -370,8 +370,7 @@ body::-webkit-scrollbar-track {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    gap: 24px;
-    margin-right: 14px;
+    gap: 16px;
   }
   @media screen and (min-width: 1440px) {
     margin-right: 50px;
@@ -388,10 +387,10 @@ body::-webkit-scrollbar-track {
 
 .menu-link-header {
   @media screen and (min-width: 834px) {
-    font-size: 14px;
+    font-size: 12px;
+
     font-weight: 700;
     color: var(--accent-color);
-    padding: 0 6px;
   }
   @media screen and (min-width: 1440px) {
     font-size: 20px;
@@ -2152,7 +2151,7 @@ body.noscroll {
 .advice-btn {
   color: var(--second-text-color);
   background-color: var(--accent-color);
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   padding: 16px 44px;
   border-radius: 80px;
