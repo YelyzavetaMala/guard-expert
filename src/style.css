@@ -614,6 +614,7 @@ body::-webkit-scrollbar-track {
 
 .section-certification {
   padding-top: 12px;
+  padding-bottom: 20px;
   @media screen and (min-width: 1440px) {
     padding-top: 38px;
   }
@@ -630,7 +631,7 @@ body::-webkit-scrollbar-track {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
+  gap: 18px;
   border-radius: 8px;
 
   padding: 8px 0;
@@ -649,7 +650,6 @@ body::-webkit-scrollbar-track {
 .certification-img {
   width: 257px;
   height: 257px;
-
   object-fit: cover;
   @media (min-width: 834px) {
     width: 274px;
@@ -670,7 +670,7 @@ body::-webkit-scrollbar-track {
   font-weight: 600;
   line-height: 1.24;
   letter-spacing: 0.5px;
-  margin-bottom: 20px;
+
   transition: transform 250ms ease-in-out;
   @media (min-width: 834px) {
     width: 274px;
@@ -1764,7 +1764,12 @@ body::-webkit-scrollbar-track {
 
 .footer-info {
   display: flex;
-  gap: 16px;
+  @media screen and (max-width: 375px) {
+    gap: 4px;
+  }
+  @media screen and (min-width: 375px) {
+    gap: 16px;
+  }
   @media screen and (min-width: 834px) {
     gap: 22px;
   }
@@ -1804,9 +1809,16 @@ body::-webkit-scrollbar-track {
   }
 }
 .socials-column {
-  width: 70px;
-  display: flex;
-  justify-content: space-between;
+  @media screen and (max-width: 375px) {
+    width: 56px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 375px) {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
   @media screen and (min-width: 1440px) {
     gap: 22px;
     justify-content: center;
