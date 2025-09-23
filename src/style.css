@@ -374,7 +374,7 @@ body::-webkit-scrollbar-track {
   }
   @media screen and (min-width: 1440px) {
     margin-right: 50px;
-    gap: 70px;
+    gap: 62px;
   }
 }
 
@@ -654,7 +654,6 @@ body::-webkit-scrollbar-track {
   @media (min-width: 834px) {
     width: 274px;
     height: 302px;
-    object-fit: none;
   }
 }
 
@@ -1495,7 +1494,7 @@ body::-webkit-scrollbar-track {
   padding: 10px;
   border: none;
   border-radius: 8px;
-  font-size: 8px;
+  font-size: 10px;
   font-style: italic;
   text-align: center;
   @media screen and (min-width: 834px) {
@@ -1570,7 +1569,7 @@ body::-webkit-scrollbar-track {
   left: 28px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
   font-style: italic;
   color: #1d1d1d80;
@@ -1587,7 +1586,7 @@ body::-webkit-scrollbar-track {
 .phone-input-wrapper input {
   width: 100%;
   padding: 10px 0;
-  font-size: 8px;
+  font-size: 10px;
   font-style: italic;
   border: none;
   border-radius: 8px;
@@ -2078,7 +2077,7 @@ body.noscroll {
   color: var(--accent-color);
   margin-bottom: 16px;
   font-weight: 600;
-  font-size: 8px;
+  font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
   margin-top: 24px;
@@ -2114,7 +2113,7 @@ body.noscroll {
   padding: 10px;
   border: none;
   border-radius: 8px;
-  font-size: 8px;
+  font-size: 12px;
   font-style: italic;
   text-align: center;
   @media screen and (min-width: 834px) {
@@ -2141,7 +2140,7 @@ body.noscroll {
   color: #1d1d1d80;
   width: 100%;
   padding: 10px 0;
-  font-size: 8px;
+  font-size: 12px;
   font-style: italic;
   border: none;
   border-radius: 8px;
