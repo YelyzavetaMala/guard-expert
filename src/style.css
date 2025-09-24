@@ -2318,3 +2318,33 @@ body.noscroll {
     height: 193px;
   }
 }
+
+.scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 8px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 9999;
+  @media screen and (min-width: 1440px) {
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+  }
+}
+
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+}

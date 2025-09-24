@@ -113,6 +113,7 @@ modals.forEach((modal) => {
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.add("hidden");
+      document.body.classList.remove("noscroll");
     }
   });
 });
@@ -274,3 +275,20 @@ function restoreUkrainian() {
   });
   localStorage.setItem("lang", "ua");
 }
+
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollTopBtn.classList.add("show");
+  } else {
+    scrollTopBtn.classList.remove("show");
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
