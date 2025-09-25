@@ -292,3 +292,19 @@ scrollTopBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+document.querySelectorAll(".myForm").forEach((form) => {
+  const checkbox = form.querySelector(".agreeCheckbox");
+  const submitBtn = form.querySelector(".submitBtn");
+
+  checkbox.addEventListener("change", () => {
+    submitBtn.disabled = !checkbox.checked;
+  });
+
+  form.addEventListener("submit", (e) => {
+    if (!checkbox.checked) {
+      e.preventDefault();
+      alert("Ви маєте погодитись на обробку даних!");
+    }
+  });
+});
