@@ -103,7 +103,7 @@
   "contacts-item4": "Legal Department:",
   "contacts-item5": "Technical Support:",
   "address": "08132, Kyiv region, Bucha district, Vyshneve city, 27 Yevropeiska Street, Office 5",
-  "copyright": "© 2025 Guardexpert. All rights reserved",
+  "copyright": "© 2025 Guardexpert. All rights reserved /",
   "advicePopup-title": "Fill out the form",
   "advice-btn": "Get a consultation",
   "status-message1": "Thank you!",
@@ -145,5 +145,8 @@
   "modal-services-text63": "Included: Fire risk analysis and assessment, development of technical solutions and recommendations, support in designing safety systems, preparation for inspection by an expert organization, consultations on regulatory requirements.",
   "placeholder-email": "Email address",
   "placeholder-phone": "Phone number",
-  "placeholder-message": "Write to us ..."
+  "placeholder-message": "Write to us ...",
+  "agree_prefix": "I agree to the processing of",
+  "personal_data": "personal data",
+  "privacy": "Privacy Policy"
 }
