@@ -380,11 +380,10 @@ body::-webkit-scrollbar-track {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    gap: 16px;
+    gap: 18px;
   }
   @media screen and (min-width: 1440px) {
-    margin-right: 50px;
-    gap: 62px;
+    gap: 60px;
   }
 }
 
